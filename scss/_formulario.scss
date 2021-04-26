@@ -1,4 +1,4 @@
-/*clases excluisvas de formulario.html*/
+/*clases excluisvas de formulario.html y recibido.html*/
 
 .seccion10 {
     background-image: radial-gradient(whitesmoke, #7baacc);
@@ -11,10 +11,11 @@
     .seccion10__articulo1 {
         background-color: #72a5c6;
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
+        row-gap: 25px;
         justify-content: flex-start;
         align-items: center;
-        height: 550px;
+        height: 560px;
         width: 550px;
         padding: 25px;
         border-radius: 10px;
@@ -35,7 +36,7 @@
             padding: 5px 25px;
             border-radius: 10px;
             width: 550px;
-            height: 550px;
+            height: 560px;
         }
     }
     @media only screen and (min-width: 480px) {
