@@ -236,9 +236,9 @@ body {
       line-height: 28px;
       font-size: 17px;
     }
-    .btnAdoptar--margenes {
-        display: block;
-        margin: 2px 0px 9px 15px;
+    .contenedorBtnAdoptar{
+        display: flex;
+        margin: 0px auto 12px;
     }
     .estilosGatos1234 {
         background-color: $color-fondo;

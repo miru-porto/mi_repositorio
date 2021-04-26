@@ -3,6 +3,9 @@
         .contenedorNosotros__seccion9PadreItems {
             width: 200px;
             transition: transform 0.5s;
+            -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
         }
         .contenedorNosotros__seccion9PadreItems:hover {
             transform: scale(1.05);
@@ -10,6 +13,9 @@
         .contenedorNosotros__seccion10PadreItems {
             width: 200px;
             transition: transform 0.5s;
+            -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
         }
         .contenedorNosotros__seccion10PadreItems:hover {
             transform: scale(1.05);
@@ -23,13 +29,34 @@
             width: 300px;
         }
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 1024px) {
         .contenedorNosotros__seccion9PadreItems {
             width: 280px;
         }
         .contenedorNosotros__seccion10PadreItems {
             width: 280px;
         }
+        .contenedorNosotros__iconos1Padre {
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: 50px;
+            margin: 0px 30px;
+            .contenedorNosotros__iconos1PadreIconMichiHouse {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .contenedorNosotros__iconos2Padre {
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: 50px;
+            margin: 0px 30px;
+            .contenedorNosotros__iconos2PadreIconMichiHouse {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
     }
     @media only screen and (min-width: 1024px) {
         .contenedorNosotros__seccion9PadreItems {
@@ -37,6 +64,26 @@
         }
         .contenedorNosotros__seccion10PadreItems {
             width: 300px;
+        }
+        .contenedorNosotros__iconos1Padre {
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 40px;
+            margin: 0px 30px;
+            .contenedorNosotros__iconos1PadreIconMichiHouse {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .contenedorNosotros__iconos2Padre {
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 40px;
+            margin: 0px 30px;
+            .contenedorNosotros__iconos2PadreIconMichiHouse {
+                width: 60px;
+                height: 60px;
+            }
         }
     }
     .contenedorNosotros__seccion8 {
@@ -54,7 +101,7 @@
         justify-content: center;
         align-items: flex-end;
         row-gap: 15px;
-        column-gap: 5px;
+        column-gap: 25px;
         padding: 10px 0px;
     }
     .contenedorNosotros__seccion10Padre {
@@ -63,7 +110,7 @@
         justify-content: center;
         align-items: flex-start;
         padding: 10px 0px;
-        column-gap: 5px;
+        column-gap: 25px;
         row-gap: 15px;
     }
     .contenedorNosotros__seccion11 {
@@ -74,30 +121,10 @@
         align-items: center;
         padding: 35px 0px;
         row-gap: 15px;
-        .contenedorNosotros__iconos1Padre {
-            display: flex;
-            flex-flow: column wrap;
-            row-gap: 40px;
-            margin: 0px 30px;
-            .contenedorNosotros__iconos1PadreIconMichiHouse {
-                width: 60px;
-                height: 60px;
-            }
-        }
         .contenedorNosotros__parrafo {
             flex-basis: 800px;
             font-size: 20px;
             margin: 0px 10px 0px;
-        }
-        .contenedorNosotros__iconos2Padre {
-            display: flex;
-            flex-flow: column wrap;
-            row-gap: 15px;
-            margin: 0px 30px;
-            .contenedorNosotros__iconos2PadreIconMichiHouse {
-                width: 60px;
-                height: 60px;
-            }
         }
     }
 }

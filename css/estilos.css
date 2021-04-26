@@ -181,9 +181,9 @@ body {
   line-height: 28px;
   font-size: 17px; }
 
-.contenedor .btnAdoptar--margenes {
-  display: block;
-  margin: 2px 0px 9px 15px; }
+.contenedor .contenedorBtnAdoptar {
+  display: flex;
+  margin: 0px auto 12px; }
 
 .contenedor .estilosGatos1234 {
   background-color: #7fbce4;
@@ -946,12 +946,18 @@ body {
 @media only screen and (min-width: 320px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
     width: 200px;
-    transition: transform 0.5s; }
+    transition: transform 0.5s;
+    -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75); }
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems:hover {
     transform: scale(1.05); }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
     width: 200px;
-    transition: transform 0.5s; }
+    transition: transform 0.5s;
+    -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75); }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems:hover {
     transform: scale(1.05); } }
 
@@ -961,17 +967,49 @@ body {
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
     width: 300px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
     width: 280px; }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
-    width: 280px; } }
+    width: 280px; }
+  .contenedorNosotros .contenedorNosotros__iconos1Padre {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 50px;
+    margin: 0px 30px; }
+    .contenedorNosotros .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
+      width: 60px;
+      height: 60px; }
+  .contenedorNosotros .contenedorNosotros__iconos2Padre {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 50px;
+    margin: 0px 30px; }
+    .contenedorNosotros .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
+      width: 60px;
+      height: 60px; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
     width: 300px; }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
-    width: 300px; } }
+    width: 300px; }
+  .contenedorNosotros .contenedorNosotros__iconos1Padre {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 40px;
+    margin: 0px 30px; }
+    .contenedorNosotros .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
+      width: 60px;
+      height: 60px; }
+  .contenedorNosotros .contenedorNosotros__iconos2Padre {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 40px;
+    margin: 0px 30px; }
+    .contenedorNosotros .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
+      width: 60px;
+      height: 60px; } }
 
 .contenedorNosotros .contenedorNosotros__seccion8 {
   background-color: #72a5c6; }
@@ -986,7 +1024,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   row-gap: 15px;
-  column-gap: 5px;
+  column-gap: 25px;
   padding: 10px 0px; }
 
 .contenedorNosotros .contenedorNosotros__seccion10Padre {
@@ -995,7 +1033,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 10px 0px;
-  column-gap: 5px;
+  column-gap: 25px;
   row-gap: 15px; }
 
 .contenedorNosotros .contenedorNosotros__seccion11 {
@@ -1006,26 +1044,10 @@ body {
   align-items: center;
   padding: 35px 0px;
   row-gap: 15px; }
-  .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__iconos1Padre {
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 40px;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; }
   .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__parrafo {
     flex-basis: 800px;
     font-size: 20px;
     margin: 0px 10px 0px; }
-  .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__iconos2Padre {
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 15px;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; }
 
 /*clases excluisvas de nosotros.html*/
 /*clases excluisvas de formulario.html*/
