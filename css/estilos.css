@@ -429,7 +429,12 @@ body {
     .Gatos3Grid .cardGatos3:hover {
       transform: scale(1.03); }
     .Gatos3Grid .gatosContenedorListas {
-      display: flex; } }
+      display: flex; }
+    .Gatos3Grid .Gatos3Grid__listasGatos3 {
+      list-style-position: inside;
+      margin: auto 0;
+      line-height: 30px;
+      font-size: 1.2em; } }
 
 @media only screen and (min-width: 480px) {
   .Gatos3Grid {
@@ -604,12 +609,7 @@ body {
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
           grid-area: parte5Btn4; }
     .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; }
-    .Gatos3Grid .Gatos3Grid__listasGatos3 {
-      list-style-position: inside;
-      margin: auto 0;
-      line-height: 30px;
-      font-size: 18px; } }
+      grid-area: botonDeVerMas; } }
 
 @media only screen and (min-width: 1024px) {
   .Gatos3Grid {
