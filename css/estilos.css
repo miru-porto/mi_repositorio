@@ -113,11 +113,7 @@ body {
   .contenedor {
     grid-template-columns: 1fr;
     row-gap: 33px;
-    grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas";
-    /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
-    /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
-    /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
-    /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/ }
+    grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas"; }
     .contenedor .contenedor__section1 {
       grid-area: section1; }
     .contenedor .contenedor__frase {
@@ -1055,7 +1051,6 @@ body {
 /*clases excluisvas de nosotros.html*/
 /*clases excluisvas de formulario.html y recibido.html*/
 .seccion10 {
-  background-image: radial-gradient(whitesmoke, #7baacc);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -1072,7 +1067,10 @@ body {
     height: 560px;
     width: 550px;
     padding: 25px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
     .seccion10 .seccion10__articulo1 .seccion10__titulo {
       text-align: center;
       font-size: 28px; }
@@ -1084,7 +1082,10 @@ body {
       padding: 5px 25px;
       border-radius: 10px;
       width: 550px;
-      height: 560px; } }
+      height: 560px;
+      -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+      -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+      box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); } }
   @media only screen and (min-width: 480px) {
     .seccion10 .seccion10__articulo2 {
       background-color: #c8e3e4;

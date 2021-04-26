@@ -159,24 +159,20 @@ body {
             background-color: $color-fondo;
            
         }
-        /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
         .contenedor__gato2 {
             grid-area: gato2;
             background-color: $color-fondo;
             
         }
-        /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
         .contenedor__gato3 {
             grid-area: gato3;
             background-color: $color-fondo;
            
         }
-        /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
         .contenedor__gato4 {
             grid-area: gato4;
             background-color: $color-fondo;
         }
-        /*el transition está expresado en el primer media de 320px, por lo tanto, sería innecesario colocarlo por segunda vez aqui*/
         .contenedor__btnvermas {
             grid-area: btnvermas;
         }
