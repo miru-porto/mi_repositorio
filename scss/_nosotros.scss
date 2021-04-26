@@ -3,9 +3,9 @@
         .contenedorNosotros__seccion9PadreItems {
             width: 200px;
             transition: transform 0.5s;
-            -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-            -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-            box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+            -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+            box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
         }
         .contenedorNosotros__seccion9PadreItems:hover {
             transform: scale(1.05);
@@ -13,9 +13,9 @@
         .contenedorNosotros__seccion10PadreItems {
             width: 200px;
             transition: transform 0.5s;
-            -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-            -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-            box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
+            -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+            -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+            box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
         }
         .contenedorNosotros__seccion10PadreItems:hover {
             transform: scale(1.05);
@@ -87,7 +87,6 @@
         }
     }
     .contenedorNosotros__seccion8 {
-        background-color: #72a5c6;
         .contenedorNosotros__subtitulo {
             padding: 10px 15px 0px 15px;
         }
@@ -114,7 +113,6 @@
         row-gap: 15px;
     }
     .contenedorNosotros__seccion11 {
-        background-color: #72a5c6;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;

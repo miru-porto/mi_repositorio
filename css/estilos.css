@@ -5,6 +5,11 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif; }
 
+/*selector de texto*/
+::selection {
+  color: white;
+  background: #1d3557; }
+
 /*header*/
 .barraDEnavegacion {
   position: sticky;
@@ -307,10 +312,10 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding-top: 40px;
     grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas"; }
     .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
-      grid-area: gatoEnAdopcion1;
-      margin-top: 40px; }
+      grid-area: gatoEnAdopcion1; }
       .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -947,17 +952,17 @@ body {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
     width: 200px;
     transition: transform 0.5s;
-    -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75); }
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems:hover {
     transform: scale(1.05); }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
     width: 200px;
     transition: transform 0.5s;
-    -webkit-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 7px 7px 20px 0px rgba(50, 50, 50, 0.75); }
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems:hover {
     transform: scale(1.05); } }
 
@@ -1011,12 +1016,11 @@ body {
       width: 60px;
       height: 60px; } }
 
-.contenedorNosotros .contenedorNosotros__seccion8 {
-  background-color: #72a5c6; }
-  .contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__subtitulo {
-    padding: 10px 15px 0px 15px; }
-  .contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__titulo {
-    padding: 0px 0px 5px 10px; }
+.contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__subtitulo {
+  padding: 10px 15px 0px 15px; }
+
+.contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__titulo {
+  padding: 0px 0px 5px 10px; }
 
 .contenedorNosotros .contenedorNosotros__seccion9Padre {
   display: flex;
@@ -1037,7 +1041,6 @@ body {
   row-gap: 15px; }
 
 .contenedorNosotros .contenedorNosotros__seccion11 {
-  background-color: #72a5c6;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

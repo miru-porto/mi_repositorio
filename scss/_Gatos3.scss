@@ -15,10 +15,10 @@
         height: fit-content;
         overflow-y: hidden;
         overflow-x: hidden;
+        padding-top: 40px;
         grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas";
         .Gatos3Grid__gatoEnAdopcion1 {
             grid-area: gatoEnAdopcion1;
-            margin-top: 40px;
             .Gatos3Grid__padreDescripcion1 {
                 display: grid;
                 grid-template-columns: 1fr;

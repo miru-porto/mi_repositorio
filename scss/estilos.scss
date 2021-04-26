@@ -8,6 +8,11 @@ $color-fondo: #7fbce4;
     font-family: 'Open Sans', sans-serif;
 }
 
+/*selector de texto*/
+::selection {
+    color: white;
+    background: #1d3557; 
+}
 
 /*header*/
 
