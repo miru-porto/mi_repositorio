@@ -319,7 +319,9 @@ body {
         grid-template-areas: "parte1Nombre1" "parte2Imagen1" "parte3Descripcion1" "parte4Lista1" "parte5Btn1";
         width: 90%;
         margin: auto;
-        background-color: #0077B6; }
+        background-color: #0077B6;
+        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+        box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
           grid-area: parte1Nombre1; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 {
@@ -328,8 +330,7 @@ body {
           .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 .Gatos3Grid__imgGatoconbotas {
             display: block;
             margin: auto;
-            width: 100%;
-            border: 4px #b8aaaa solid; }
+            width: 100%; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte3Descripcion1 {
           grid-area: parte3Descripcion1; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte4Lista1 {
@@ -337,7 +338,8 @@ body {
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gato3Grid__parte5Btn1 {
           grid-area: parte5Btn1; }
     .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
-      grid-area: gatoEnAdopcion2; }
+      grid-area: gatoEnAdopcion2;
+      transition: transform 0.5s; }
       .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -346,7 +348,9 @@ body {
         grid-template-areas: "parte1Nombre2" "parte2Imagen2" "parte3Descripcion2" "parte4Listas2" "parte5Btn2";
         width: 90%;
         margin: auto;
-        background-color: #0077B6; }
+        background-color: #0077B6;
+        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+        box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
           grid-area: parte1Nombre2; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 {
@@ -355,8 +359,7 @@ body {
           .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 .Gatos3Grid__imgGatoquenoquierecomer {
             width: 100%;
             display: block;
-            margin: auto;
-            border: 4px #b8aaaa solid; }
+            margin: auto; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte3Descripcion2 {
           grid-area: parte3Descripcion2; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte4Listas2 {
@@ -373,7 +376,9 @@ body {
         grid-template-areas: "parte1Nombre3" "parte2Imagen3" "parte3Descripcion3" "parte4Listas3" "parte5Btn3";
         width: 90%;
         margin: auto;
-        background-color: #0077B6; }
+        background-color: #0077B6;
+        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+        box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
           grid-area: parte1Nombre3; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 {
@@ -382,8 +387,7 @@ body {
           .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 .Gatos3Grid__imgMiguel {
             width: 100%;
             display: block;
-            margin: auto;
-            border: 4px #b8aaaa solid; }
+            margin: auto; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte3Descripcion3 {
           grid-area: parte3Descripcion3; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte4Listas3 {
@@ -400,7 +404,9 @@ body {
         grid-template-areas: "parte1Nombre4" "parte2Imagen4" "parte3Descripcion4" "parte4Listas4" "parte5Btn4";
         width: 90%;
         margin: auto;
-        background-color: #0077B6; }
+        background-color: #0077B6;
+        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+        box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
           grid-area: parte1Nombre4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 {
@@ -409,8 +415,7 @@ body {
           .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 .Gatos3Grid__imgGatoyohabiaponidomiscosasaqui {
             width: 100%;
             display: block;
-            margin: auto;
-            border: 4px #b8aaaa solid; }
+            margin: auto; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte3Descripcion4 {
           grid-area: parte3Descripcion4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte4Listas4 {
@@ -418,7 +423,13 @@ body {
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
           grid-area: parte5Btn4; }
     .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; } }
+      grid-area: botonDeVerMas; }
+    .Gatos3Grid .cardGatos3 {
+      transition: transform 0.5s; }
+    .Gatos3Grid .cardGatos3:hover {
+      transform: scale(1.03); }
+    .Gatos3Grid .gatosContenedorListas {
+      display: flex; } }
 
 @media only screen and (min-width: 480px) {
   .Gatos3Grid {
@@ -502,6 +513,11 @@ body {
           grid-area: parte4Listas4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
           grid-area: parte5Btn4; }
+    .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
+      display: flex; }
+    .Gatos3Grid .parrafo {
+      font-size: 18px;
+      margin: auto; }
     .Gatos3Grid .Gatos3Grid__botonDeVerMas {
       grid-area: botonDeVerMas; } }
 
@@ -591,11 +607,8 @@ body {
       grid-area: botonDeVerMas; }
     .Gatos3Grid .Gatos3Grid__listasGatos3 {
       list-style-position: inside;
-      margin: 55px 13px;
-      line-height: 35px; }
-    .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
-      padding: 50px 2px; }
-    .Gatos3Grid .parrafo {
+      margin: auto 0;
+      line-height: 30px;
       font-size: 18px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -696,6 +709,9 @@ body {
 .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
   margin: 5px 2px;
   font-size: 17px; }
+
+.Gatos3Grid .gatosContenedorTexto {
+  display: flex; }
 
 .Gatos3Grid .btnAdoptar--margenesGatos3 {
   display: block;

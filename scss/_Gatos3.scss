@@ -28,6 +28,8 @@
                 width: 90%;
                 margin: auto;
                 background-color: #0077B6;
+                -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+                box-shadow: 5px 1px 18px -2px $color-fondo;
                 .Gatos3Grid__parte1Nombre1 {
                     grid-area: parte1Nombre1;
                 }
@@ -38,7 +40,6 @@
                         display: block;
                         margin: auto;
                         width: 100%;
-                        border: 4px rgb(184, 170, 170) solid;
                     }
                 }
                 .Gatos3Grid__parte3Descripcion1 {
@@ -54,6 +55,7 @@
         }
         .Gatos3Grid__gatoEnAdopcion2 {
             grid-area: gatoEnAdopcion2;
+            transition: transform 0.5s;
             .Gatos3Grid__padreDescripcion2 {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -63,6 +65,8 @@
                 width: 90%;
                 margin: auto;
                 background-color: #0077B6;
+                -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+                box-shadow: 5px 1px 18px -2px $color-fondo;
                 .Gatos3Grid__parte1Nombre2 {
                     grid-area: parte1Nombre2;
                 }
@@ -73,7 +77,6 @@
                         width: 100%;
                         display: block;
                         margin: auto;
-                        border: 4px rgb(184, 170, 170) solid;
                     }
                 }
                 .Gatos3Grid__parte3Descripcion2 {
@@ -98,6 +101,8 @@
                 width: 90%;
                 margin: auto;
                 background-color: #0077B6;
+                -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+                box-shadow: 5px 1px 18px -2px $color-fondo;
                 .Gatos3Grid__parte1Nombre3 {
                     grid-area: parte1Nombre3;
                 }
@@ -108,7 +113,6 @@
                         width: 100%;
                         display: block;
                         margin: auto;
-                        border: 4px rgb(184, 170, 170) solid;
                     }
                 }
                 .Gatos3Grid__parte3Descripcion3 {
@@ -133,6 +137,8 @@
                 width: 90%;
                 margin: auto;
                 background-color: #0077B6;
+                -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+                box-shadow: 5px 1px 18px -2px $color-fondo;
                 .Gatos3Grid__parte1Nombre4 {
                     grid-area: parte1Nombre4;
                 }
@@ -143,7 +149,6 @@
                         width: 100%;
                         display: block;
                         margin: auto;
-                        border: 4px rgb(184, 170, 170) solid;
                     }
                 }
                 .Gatos3Grid__parte3Descripcion4 {
@@ -159,6 +164,15 @@
         }
         .Gatos3Grid__botonDeVerMas {
             grid-area: botonDeVerMas;
+        }
+        .cardGatos3{
+            transition: transform 0.5s;
+        }
+        .cardGatos3:hover{
+            transform: scale(1.03);
+        }
+        .gatosContenedorListas{
+            display: flex;
         }
     }
     @media only screen and (min-width: 480px) {
@@ -269,6 +283,13 @@
                     grid-area: parte5Btn4;
                 }
             }
+        }
+        .Gatos3Grid__parrafoDescriptivo {
+            display: flex;
+        }
+        .parrafo {
+            font-size: 18px;
+            margin: auto;
         }
         .Gatos3Grid__botonDeVerMas {
             grid-area: botonDeVerMas;
@@ -388,15 +409,11 @@
         }
         .Gatos3Grid__listasGatos3 {
             list-style-position: inside;
-            margin: 55px 13px;
-            line-height: 35px;
-        }
-        .Gatos3Grid__parrafoDescriptivo {
-            padding: 50px 2px;
-        }
-        .parrafo {
+            margin: auto 0;
+            line-height: 30px;
             font-size: 18px;
         }
+        
     }
     @media only screen and (min-width: 1024px){
         display: grid;
@@ -523,6 +540,9 @@
     .Gatos3Grid__parrafoDescriptivo {
         margin: 5px 2px;
         font-size: 17px;
+    }
+    .gatosContenedorTexto{
+        display: flex;
     }
     .btnAdoptar--margenesGatos3 {
         display: block;
