@@ -169,6 +169,10 @@
         .Gatos3Grid__botonDeVerMas {
             grid-area: botonDeVerMas;
         }
+        .btnvermasEstilos--margenesGatos3 {
+            display: block;
+            margin: 0px auto 35px;
+        }
         .cardGatos3{
             transition: transform 0.5s;
         }
@@ -303,6 +307,10 @@
         }
         .Gatos3Grid__botonDeVerMas {
             grid-area: botonDeVerMas;
+        }
+        .btnvermasEstilos--margenesGatos3 {
+            display: block;
+            margin: 0px auto 25px;
         }
     }
     @media only screen and (min-width: 768px) {
@@ -560,10 +568,7 @@
         display: block;
         margin: 10px auto;
     }
-    .btnvermasEstilos--margenesGatos3 {
-        display: block;
-        margin: 0px auto 25px;
-    }
+    
 }
 
 

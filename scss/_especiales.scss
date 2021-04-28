@@ -5,9 +5,10 @@
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 10px;
-        row-gap: 35px;
+        row-gap: 45px;
+        margin-bottom: 40px;
         background-color: rgb(231, 226, 226);
-        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales" "BtnVerMasEspeciales";
+        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
         .padreDeSecciones__introduccionEspeciales {
             grid-area: introduccionEspeciales;
             background-color: #72a5c6;
@@ -112,16 +113,13 @@
                 }
             }
         }
-        .padreDeSecciones__BtnVerMasEspeciales {
-            grid-area: BtnVerMasEspeciales;
-        }
     }
     @media only screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 10px;
         row-gap: 10px;
-        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales" "BtnVerMasEspeciales";
+        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
         .padreDeSecciones__introduccionEspeciales {
             grid-area: introduccionEspeciales;
         }
@@ -209,16 +207,13 @@
                 }
             }
         }
-        .padreDeSecciones__BtnVerMasEspeciales {
-            grid-area: BtnVerMasEspeciales;
-        }
     }
     @media only screen and (min-width: 1024px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
         row-gap: 40px;
-        grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales" "BtnVerMasEspeciales BtnVerMasEspeciales";
+        grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales";
     }
     .padreDeSecciones__TamañoDeLetraEnTitulo {
         font-size: 25px;
@@ -256,6 +251,6 @@
     }
     .btnvermasEstilos--margenesEspeciales {
         display: block;
-        margin: 0px auto 30px auto;
+        margin: 0px auto 35px;
     }
 }

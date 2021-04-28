@@ -200,10 +200,9 @@ body {
 
 .btnAdoptar {
   border: 5px solid lightgray;
-  padding: 2px 2px;
+  padding: 2px 4px;
   border-radius: 10px;
   font-size: 15px;
-  font-family: verdana;
   font-weight: bold;
   transition: transform 0.5s;
   display: flex; }
@@ -431,6 +430,9 @@ body {
           grid-area: parte5Btn4; }
     .Gatos3Grid .Gatos3Grid__botonDeVerMas {
       grid-area: botonDeVerMas; }
+    .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
+      display: block;
+      margin: 0px auto 35px; }
     .Gatos3Grid .cardGatos3 {
       transition: transform 0.5s; }
     .Gatos3Grid .cardGatos3:hover {
@@ -531,7 +533,10 @@ body {
       font-size: 18px;
       margin: auto; }
     .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; } }
+      grid-area: botonDeVerMas; }
+    .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
+      display: block;
+      margin: 0px auto 25px; } }
 
 @media only screen and (min-width: 768px) {
   .Gatos3Grid {
@@ -731,10 +736,6 @@ body {
   display: block;
   margin: 10px auto; }
 
-.Gatos3Grid .btnvermasEstilos--margenesGatos3 {
-  display: block;
-  margin: 0px auto 25px; }
-
 /*clases excluisvas de Gatos3.html*/
 /*clases excluisvas de especiales.html*/
 @media only screen and (min-width: 320px) {
@@ -742,9 +743,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 10px;
-    row-gap: 35px;
+    row-gap: 45px;
+    margin-bottom: 40px;
     background-color: #e7e2e2;
-    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales" "BtnVerMasEspeciales"; }
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
     .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
       grid-area: introduccionEspeciales;
       background-color: #72a5c6; }
@@ -827,9 +829,7 @@ body {
             height: 100%;
             display: block;
             margin: auto;
-            border-radius: 20px; }
-    .padreDeSecciones .padreDeSecciones__BtnVerMasEspeciales {
-      grid-area: BtnVerMasEspeciales; } }
+            border-radius: 20px; } }
 
 @media only screen and (min-width: 768px) {
   .padreDeSecciones {
@@ -837,7 +837,7 @@ body {
     grid-template-columns: 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales" "BtnVerMasEspeciales"; }
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
     .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
       grid-area: introduccionEspeciales; }
     .padreDeSecciones .padreDeSecciones__seccion1Especiales {
@@ -907,9 +907,7 @@ body {
           justify-content: space-between; }
         .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 {
           grid-area: ImagenEspeciales4;
-          display: flex; }
-    .padreDeSecciones .padreDeSecciones__BtnVerMasEspeciales {
-      grid-area: BtnVerMasEspeciales; } }
+          display: flex; } }
 
 @media only screen and (min-width: 1024px) {
   .padreDeSecciones {
@@ -917,7 +915,7 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 40px;
-    grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales" "BtnVerMasEspeciales BtnVerMasEspeciales"; } }
+    grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales"; } }
 
 .padreDeSecciones .padreDeSecciones__TamañoDeLetraEnTitulo {
   font-size: 25px;
@@ -955,7 +953,7 @@ body {
 
 .padreDeSecciones .btnvermasEstilos--margenesEspeciales {
   display: block;
-  margin: 0px auto 30px auto; }
+  margin: 0px auto 35px; }
 
 @media only screen and (min-width: 320px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
@@ -989,7 +987,7 @@ body {
   .contenedorNosotros .contenedorNosotros__iconos1Padre {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 50px;
+    column-gap: 9em;
     margin: 0px 30px; }
     .contenedorNosotros .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
       width: 60px;
@@ -997,7 +995,7 @@ body {
   .contenedorNosotros .contenedorNosotros__iconos2Padre {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 50px;
+    column-gap: 9em;
     margin: 0px 30px; }
     .contenedorNosotros .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
       width: 60px;
@@ -1037,7 +1035,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   row-gap: 15px;
-  column-gap: 25px;
+  column-gap: 30px;
   padding: 10px 0px; }
 
 .contenedorNosotros .contenedorNosotros__seccion10Padre {
@@ -1046,7 +1044,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 10px 0px;
-  column-gap: 25px;
+  column-gap: 30px;
   row-gap: 15px; }
 
 .contenedorNosotros .contenedorNosotros__seccion11 {
