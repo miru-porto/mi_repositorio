@@ -140,7 +140,7 @@ body {
             grid-area: btnvermas;
             .btnvermasEstilos--margenes {
                 display: block;
-                margin: 15px auto;
+                margin: 0px auto 33px;
             }
         }
     }
@@ -203,7 +203,7 @@ body {
     @media only screen and (min-width: 1024px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        row-gap: 10px;
+        row-gap: 30px;
         grid-template-areas: "section1 section1 section1 section1" "miratmb miratmb miratmb miratmb" "gato1 gato2 gato3 gato4" "btnvermas btnvermas btnvermas btnvermas";
         .contenedor__section1 {
             grid-area: section1;
@@ -225,6 +225,9 @@ body {
         }
         .contenedor__btnvermas {
             grid-area: btnvermas;
+            .contenedor__btnvermas{
+                margin-bottom: 15px;
+            }
         }
     }
     .contenedor__nombreDEgatos1234 {
