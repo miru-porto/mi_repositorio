@@ -743,7 +743,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 10px;
-    row-gap: 45px;
+    row-gap: 55px;
     margin-bottom: 40px;
     background-color: #e7e2e2;
     grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
