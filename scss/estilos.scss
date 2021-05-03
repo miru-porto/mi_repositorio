@@ -3,387 +3,385 @@
 $color-fondo: #7fbce4;
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*selector de texto*/
 ::selection {
-    color: white;
-    background: #1d3557; 
+  color: white;
+  background: #1d3557;
 }
 
 /*header*/
 
 .barraDEnavegacion {
-    position: sticky;
-    top: 0px;
-    z-index: 3;
-    background-color: #1d3557;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: #1d3557;
 }
-
 
 /*body*/
 
 body {
-    background-color: #fff;
+  background-color: #fff;
 }
-
 
 /*clases exclusivas del index.html*/
 
 .contenedor {
-    @mixin estilos($color, $fondo) {
-        color: $color;
-        background-color: $fondo;
+  @mixin estilos($color, $fondo) {
+    color: $color;
+    background-color: $fondo;
+  }
+  @media only screen and (min-width: 320px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 33px;
+    height: fit-content;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    grid-template-areas: "section1" "miratmb" "gato1 " "gato2 " "gato3 " "gato4 " "btnvermas";
+    .contenedor__section1 {
+      grid-area: section1;
     }
-    @media only screen and (min-width: 320px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 33px;
-        height: fit-content;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        grid-template-areas: "section1" "miratmb" "gato1 " "gato2 " "gato3 " "gato4 " "btnvermas";
-        .contenedor__section1 {
-            grid-area: section1;
-        }
-        .contenedor__frase {
-            grid-area: miratmb;
-            .contenedor__inspiradora {
-                font-size: 30px;
-                text-align: center;
-                font-style: italic;
-                font-weight: 600;
-                margin: 15px 0px 25px;
-                @include estilos(black, transparent);
-            }
-            .contenedor_hr{
-                height: 4px;
-                opacity: 100;
-                background-image: linear-gradient(to right, rgb(231, 226, 226), #1d3557, rgb(231, 226, 226));
-            }
-        }
-        .contenedor__gato1 {
-            grid-area: gato1;
-            transition: transform 0.5s;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-between;
-            .contenedor__imgsiamesa {
-                width: 100%;
-                border-radius: 20px 20px 0 0;
-                transition: transform 0.5s;
-            }
-            .contenedor__imgsiamesa:hover{
-                transform: scale(0.98);           
-            }
-        }
-        .contenedor__gato1:hover {
-            transform: scale(1.05);
-        }
-        .contenedor__gato2 {
-            grid-area: gato2;
-            transition: transform 0.5s;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-between;
-            .contenedor__imgAzulruso {
-                width: 100%;
-                border-radius: 20px 20px 0 0;
-                transition: transform 0.5s;
-            }
-            .contenedor__imgAzulruso:hover{
-                transform: scale(0.98); 
-            }
-        }
-        .contenedor__gato2:hover {
-            transform: scale(1.05);
-        }
-        .contenedor__gato3 {
-            grid-area: gato3;
-            transition: transform 0.5s;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-between;
-            .contenedor__imgGatoBombay {
-                transition: transform 0.5s;
-                width: 100%;
-                border-radius: 20px 20px 0 0;
-            }
-            .contenedor__imgGatoBombay:hover{
-                transform: scale(0.98);
-            }
-        }
-        .contenedor__gato3:hover {
-            transform: scale(1.05);
-        }
-        .contenedor__gato4 {
-            grid-area: gato4;
-            transition: transform 0.5s;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-between;
-            .contenedor__imgEuropeo {
-                transition: transform 0.5s;
-                width: 100%;
-                border-radius: 20px 20px 0 0;
-            }
-            .contenedor__imgEuropeo:hover{
-                transform: scale(0.98);
-            }
-        }
-        .contenedor__gato4:hover {
-            transform: scale(1.05);
-        }
-        .contenedor__btnvermas {
-            grid-area: btnvermas;
-            .btnvermasEstilos--margenes {
-                display: block;
-                margin: 0px auto 33px;
-            }
-        }
-    }
-    @media only screen and (min-width: 480px) {
-        grid-template-columns: 1fr;
-        row-gap: 33px;
-        grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas";
-        .contenedor__section1 {
-            grid-area: section1;
-        }
-        .contenedor__frase {
-            grid-area: miratmb;
-        }
-        .contenedor__gato1 {
-            grid-area: gato1;
-            background-color: $color-fondo;
-           
-        }
-        .contenedor__gato2 {
-            grid-area: gato2;
-            background-color: $color-fondo;
-            
-        }
-        .contenedor__gato3 {
-            grid-area: gato3;
-            background-color: $color-fondo;
-           
-        }
-        .contenedor__gato4 {
-            grid-area: gato4;
-            background-color: $color-fondo;
-        }
-        .contenedor__btnvermas {
-            grid-area: btnvermas;
-        }
-    }
-    @media only screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 33px;
-        grid-template-areas: "section1 section1" "miratmb miratmb" "gato1  gato2" "gato3 gato4" "btnvermas btnvermas";
-        .contenedor__section1 {
-            grid-area: section1;
-        }
-        .contenedor__gato1 {
-            grid-area: gato1;
-        }
-        .contenedor__gato2 {
-            grid-area: gato2;
-        }
-        .contenedor__gato3 {
-            grid-area: gato3;
-        }
-        .contenedor__gato4 {
-            grid-area: gato4;
-        }
-        .contenedor__btnvermas {
-            grid-area: btnvermas;
-        }
-    }
-    @media only screen and (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        row-gap: 30px;
-        grid-template-areas: "section1 section1 section1 section1" "miratmb miratmb miratmb miratmb" "gato1 gato2 gato3 gato4" "btnvermas btnvermas btnvermas btnvermas";
-        .contenedor__section1 {
-            grid-area: section1;
-        }
-        .contenedor__frase {
-            grid-area: miratmb;
-        }
-        .contenedor__gato1 {
-            grid-area: gato1;  
-        }
-        .contenedor__gato2 {
-            grid-area: gato2;
-        }
-        .contenedor__gato3 {
-            grid-area: gato3;
-        }
-        .contenedor__gato4 {
-            grid-area: gato4;
-        }
-        .contenedor__btnvermas {
-            grid-area: btnvermas;
-            .contenedor__btnvermas{
-                margin-bottom: 15px;
-            }
-        }
-    }
-    .contenedor__nombreDEgatos1234 {
+    .contenedor__frase {
+      grid-area: miratmb;
+      .contenedor__inspiradora {
+        font-size: 30px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        margin: 15px 0px 25px;
         @include estilos(black, transparent);
-        font-weight: bold;
-        margin: 10px 0px 8px 15px;
-  
+      }
+      .contenedor_hr {
+        height: 4px;
+        opacity: 100;
+        background-image: linear-gradient(
+          to right,
+          rgb(231, 226, 226),
+          #1d3557,
+          rgb(231, 226, 226)
+        );
+      }
     }
-    .contenedor__estilosListas {
-      line-height: 28px;
-      font-size: 17px;
+    .contenedor__gato1 {
+      grid-area: gato1;
+      transition: transform 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      .contenedor__imgsiamesa {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        transition: transform 0.5s;
+      }
+      .contenedor__imgsiamesa:hover {
+        transform: scale(0.98);
+      }
     }
-    .contenedorBtnAdoptar{
-        display: flex;
-        margin: 0px auto 12px;
+    .contenedor__gato1:hover {
+      transform: scale(1.05);
     }
-    .estilosGatos1234 {
-        background-color: $color-fondo;
-        margin: 0px 15px 0px 15px;
-        border-radius: 20px;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+    .contenedor__gato2 {
+      grid-area: gato2;
+      transition: transform 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      .contenedor__imgAzulruso {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        transition: transform 0.5s;
+      }
+      .contenedor__imgAzulruso:hover {
+        transform: scale(0.98);
+      }
     }
-    .contenedor__CarouselParrafo{
-        background-color: rgba(180, 179, 179, 0.479);
+    .contenedor__gato2:hover {
+      transform: scale(1.05);
     }
+    .contenedor__gato3 {
+      grid-area: gato3;
+      transition: transform 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      .contenedor__imgGatoBombay {
+        transition: transform 0.5s;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+      .contenedor__imgGatoBombay:hover {
+        transform: scale(0.98);
+      }
+    }
+    .contenedor__gato3:hover {
+      transform: scale(1.05);
+    }
+    .contenedor__gato4 {
+      grid-area: gato4;
+      transition: transform 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      .contenedor__imgEuropeo {
+        transition: transform 0.5s;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+      .contenedor__imgEuropeo:hover {
+        transform: scale(0.98);
+      }
+    }
+    .contenedor__gato4:hover {
+      transform: scale(1.05);
+    }
+    .contenedor__btnvermas {
+      grid-area: btnvermas;
+      .btnvermasEstilos--margenes {
+        display: block;
+        margin: 0px auto 33px;
+      }
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    grid-template-columns: 1fr;
+    row-gap: 33px;
+    grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas";
+    .contenedor__section1 {
+      grid-area: section1;
+    }
+    .contenedor__frase {
+      grid-area: miratmb;
+    }
+    .contenedor__gato1 {
+      grid-area: gato1;
+      background-color: $color-fondo;
+    }
+    .contenedor__gato2 {
+      grid-area: gato2;
+      background-color: $color-fondo;
+    }
+    .contenedor__gato3 {
+      grid-area: gato3;
+      background-color: $color-fondo;
+    }
+    .contenedor__gato4 {
+      grid-area: gato4;
+      background-color: $color-fondo;
+    }
+    .contenedor__btnvermas {
+      grid-area: btnvermas;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 33px;
+    grid-template-areas: "section1 section1" "miratmb miratmb" "gato1  gato2" "gato3 gato4" "btnvermas btnvermas";
+    .contenedor__section1 {
+      grid-area: section1;
+    }
+    .contenedor__gato1 {
+      grid-area: gato1;
+    }
+    .contenedor__gato2 {
+      grid-area: gato2;
+    }
+    .contenedor__gato3 {
+      grid-area: gato3;
+    }
+    .contenedor__gato4 {
+      grid-area: gato4;
+    }
+    .contenedor__btnvermas {
+      grid-area: btnvermas;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    grid-template-areas: "section1 section1 section1 section1" "miratmb miratmb miratmb miratmb" "gato1 gato2 gato3 gato4" "btnvermas btnvermas btnvermas btnvermas";
+    .contenedor__section1 {
+      grid-area: section1;
+    }
+    .contenedor__frase {
+      grid-area: miratmb;
+    }
+    .contenedor__gato1 {
+      grid-area: gato1;
+    }
+    .contenedor__gato2 {
+      grid-area: gato2;
+    }
+    .contenedor__gato3 {
+      grid-area: gato3;
+    }
+    .contenedor__gato4 {
+      grid-area: gato4;
+    }
+    .contenedor__btnvermas {
+      grid-area: btnvermas;
+      .contenedor__btnvermas {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .contenedor__nombreDEgatos1234 {
+    @include estilos(black, transparent);
+    font-weight: bold;
+    margin: 10px 0px 8px 15px;
+  }
+  .contenedor__estilosListas {
+    line-height: 28px;
+    font-size: 17px;
+  }
+  .contenedorBtnAdoptar {
+    display: flex;
+    margin: 0px auto 12px;
+  }
+  .estilosGatos1234 {
+    background-color: $color-fondo;
+    margin: 0px 15px 0px 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+    box-shadow: 5px 1px 18px -2px $color-fondo;
+  }
+  .contenedor__CarouselParrafo {
+    background-color: rgba(180, 179, 179, 0.479);
+  }
 }
 
 .btnAdoptar {
-    border: 5px solid lightgray;
-    padding: 2px 4px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    transition: transform 0.5s;
-    display: flex;
-    &:hover {
-        transform: scale(1.1);
-    }
+  border: 5px solid lightgray;
+  padding: 2px 4px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.5s;
+  display: flex;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .btnvermasEstilos {
-    border: 5px solid lightgray;
-    border-radius: 10px;
-    width: 110px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: transform 0.5s;
-    &:hover {
-        transform: scale(1.1);
-    }
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
-
 
 /*footer*/
 
 .footer {
-    background-color: #1d3557;
-    .footer__padreDiv1 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        .footer__padreLogoYNombre {
-            padding: 25px 4px;
-            .footer__hijologo {
-                width: 35px;
-                height: 35px;
-                margin: -11px 0px 0px 0px;
-            }
-            .footer__enlace {
-                margin: 5px 10px;
-                text-decoration: none;
-                .footer__hijoNombre {
-                    display: inline;
-                    color: azure;
-                }
-            }
+  background-color: #1d3557;
+  .footer__padreDiv1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    .footer__padreLogoYNombre {
+      padding: 25px 4px;
+      .footer__hijologo {
+        width: 35px;
+        height: 35px;
+        margin: -11px 0px 0px 0px;
+      }
+      .footer__enlace {
+        margin: 5px 10px;
+        text-decoration: none;
+        .footer__hijoNombre {
+          display: inline;
+          color: azure;
         }
-        .footer__promocionEnRedesSociales {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-evenly;
-            height: 100px;
-            align-items: center;
-            .footer__mensaje1 {
-                color: azure;
-                padding: 0px 20px 0px;
-            }
-            .footer__padreRedes1 {
-                .footer__enlaceFooter {
-                    margin: 5px 10px;
-                    text-decoration: none;
-                    .footer__hijoLogosRedes1 {
-                        display: inline;
-                        margin-top: 1%;
-                        width: 20px;
-                    }
-                    .footer__hijosNombresRedes {
-                        display: inline;
-                        color: azure;
-                    }
-                    .footer__hijosNombresRedes:hover {
-                        color: rgb(210, 221, 221);
-                    }
-                }
-                .footer__ConEnlace {
-                    margin: 5px 10px;
-                    text-decoration: none;
-                    .footer__hijoRedes1 {
-                        display: inline;
-                        margin-top: 1%;
-                        width: 20px;
-                    }
-                    .footer__hijosNombresEnLasRedes {
-                        display: inline;
-                        color: azure;
-                    }
-                    .footer__hijosNombresEnLasRedes:hover {
-                        color: rgb(210, 221, 221);
-                    }
-                }
-            }
-        }
+      }
     }
-    .footer__hr {
-        background-color: cadetblue;
-        height: 1px;
-        margin: 0px auto;
-        opacity: 20%;
-    }
-    .footer__padreDiv2 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        height: fit-content;
-        margin: 10px 0px 0px 0px;
-        .footer__itemsEnlaces {
+    .footer__promocionEnRedesSociales {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      height: 100px;
+      align-items: center;
+      .footer__mensaje1 {
+        color: azure;
+        padding: 0px 20px 0px;
+      }
+      .footer__padreRedes1 {
+        .footer__enlaceFooter {
+          margin: 5px 10px;
+          text-decoration: none;
+          .footer__hijoLogosRedes1 {
+            display: inline;
+            margin-top: 1%;
+            width: 20px;
+          }
+          .footer__hijosNombresRedes {
+            display: inline;
             color: azure;
-            margin: 0px 10px;
-            text-decoration: none;
+          }
+          .footer__hijosNombresRedes:hover {
+            color: rgb(210, 221, 221);
+          }
         }
-        .footer__itemsEnlaces:hover {
-            color: rgb(197, 204, 204);
-        }
-        .footer_derechosDeAutor {
+        .footer__ConEnlace {
+          margin: 5px 10px;
+          text-decoration: none;
+          .footer__hijoRedes1 {
+            display: inline;
+            margin-top: 1%;
+            width: 20px;
+          }
+          .footer__hijosNombresEnLasRedes {
+            display: inline;
             color: azure;
-            margin: 0px 2% 0px 0px;
+          }
+          .footer__hijosNombresEnLasRedes:hover {
+            color: rgb(210, 221, 221);
+          }
         }
+      }
     }
+  }
+  .footer__hr {
+    background-color: cadetblue;
+    height: 1px;
+    margin: 0px auto;
+    opacity: 20%;
+  }
+  .footer__padreDiv2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 10px 0px 0px 0px;
+    .footer__itemsEnlaces {
+      color: azure;
+      margin: 0px 10px;
+      text-decoration: none;
+    }
+    .footer__itemsEnlaces:hover {
+      color: rgb(197, 204, 204);
+    }
+    .footer_derechosDeAutor {
+      color: azure;
+      margin: 0px 2% 0px 0px;
+    }
+  }
 }
 
 @import "Gatos3";

@@ -5,21 +5,36 @@
   font-size: 35px;
   margin: 14px 0px 0px;
 }
-.main_parrafo{
-    margin: 10px 0px 0px;
-    text-align: center;
-    font-size: 18px;
-    color: #6d6d6d;
+.main_parrafo {
+  margin: 10px 0px 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #6d6d6d;
 }
-.main_hr {
-    height: 4px;
+
+@media only screen and (max-width: 768px) {
+  .main_hr {
+    height: 1px;
     opacity: 100;
     background-image: linear-gradient(
-        to right,
-        rgb(231, 226, 226),
-        #1d3557,
-        rgb(231, 226, 226)
+      to right,
+      rgb(231, 226, 226),
+      #1d3557,
+      rgb(231, 226, 226)
     );
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main_hr {
+    height: 4px !important;
+    opacity: 100;
+    background-image: linear-gradient(
+      to right,
+      rgb(231, 226, 226),
+      #1d3557,
+      rgb(231, 226, 226)
+    );
+  }
 }
 
 .Gatos3Grid {
@@ -205,7 +220,6 @@
       line-height: 1.5em;
       font-size: 1.2em;
     }
-
   }
   @media only screen and (min-width: 480px) {
     display: grid;

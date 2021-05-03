@@ -1,79 +1,78 @@
 /*clases excluisvas de formulario.html y recibido.html*/
 
 .seccion10 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  row-gap: 10px;
+  .seccion10__articulo1 {
+    background-color: #72a5c6;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: flex-start;
     align-items: center;
-    padding: 60px 0px;
-    row-gap: 10px;
-    .seccion10__articulo1 {
-        background-color: #72a5c6;
-        display: flex;
-        flex-direction: column;
-        row-gap: 25px;
-        justify-content: flex-start;
-        align-items: center;
-        height: 560px;
-        width: 550px;
-        padding: 25px;
-        border-radius: 10px;
-        -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-        -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-        box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-        .seccion10__titulo {
-            text-align: center;
-            font-size: 28px;
-        }
-        .articulo1__notificacion {
-            font-style: italic;
-        }
-        .seccion10__parrafo {
-            @extend %letraNegra;
-        }
+    height: 560px;
+    width: 550px;
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+    .seccion10__titulo {
+      text-align: center;
+      font-size: 28px;
     }
-    @media only screen and (min-width: 320px) {
-        .seccion10__articulo2 {
-            background-color: #c8e3e4;
-            padding: 5px 25px;
-            border-radius: 10px;
-            width: 550px;
-            height: 560px;
-            -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-            -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-            box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-        }
+    .articulo1__notificacion {
+      font-style: italic;
     }
-    @media only screen and (min-width: 480px) {
-        .seccion10__articulo2 {
-            background-color: #c8e3e4;
-            padding: 10px 25px;
-        }
+    .seccion10__parrafo {
+      @extend %letraNegra;
     }
-    @media only screen and (min-width: 600px) {
-        .seccion10__articulo2 {
-            background-color: #c8e3e4;
-            padding: 10px 25px;
-        }
+  }
+  @media only screen and (min-width: 320px) {
+    .seccion10__articulo2 {
+      background-color: #c8e3e4;
+      padding: 5px 25px;
+      border-radius: 10px;
+      width: 550px;
+      height: 560px;
+      -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+      -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+      box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     }
-    @media only screen and (min-width: 768px) {
-        .seccion10__articulo2 {
-            background-color: #c8e3e4;
-            padding: 10px 25px;
-        }
+  }
+  @media only screen and (min-width: 480px) {
+    .seccion10__articulo2 {
+      background-color: #c8e3e4;
+      padding: 10px 25px;
     }
-    @media only screen and (min-width: 1024px) {
-        .seccion10__articulo2 {
-            background-color: #c8e3e4;
-            padding: 10px 25px;
-        }
+  }
+  @media only screen and (min-width: 600px) {
+    .seccion10__articulo2 {
+      background-color: #c8e3e4;
+      padding: 10px 25px;
     }
+  }
+  @media only screen and (min-width: 768px) {
+    .seccion10__articulo2 {
+      background-color: #c8e3e4;
+      padding: 10px 25px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .seccion10__articulo2 {
+      background-color: #c8e3e4;
+      padding: 10px 25px;
+    }
+  }
 }
-
 
 /*propiedades que definen el extend*/
 
 $negro: black;
 %letraNegra {
-    color: $negro;
+  color: $negro;
 }

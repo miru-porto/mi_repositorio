@@ -1,256 +1,256 @@
 /*clases excluisvas de especiales.html*/
 
 .padreDeSecciones {
-    @media only screen and (min-width: 320px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 55px;
-        margin-bottom: 40px;
-        background-color: #fff;
-        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
-        .padreDeSecciones__introduccionEspeciales {
-            grid-area: introduccionEspeciales;
-            background-color: #72a5c6;
-        }
-        .padreDeSecciones__seccion1Especiales {
-            grid-area: seccion1Especiales;
-            background-color: #72a5c6;
-            border-radius: 20px;
-            .padreDeSecciones__padreDEseccion1Especiales {
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 10px;
-                grid-template-areas: "DescripcionEspeciales1" "ImagenEspeciales1";
-                .padreDeSecciones__DescripcionEspeciales1 {
-                    grid-area: DescripcionEspeciales1;
-                }
-                .padreDeSecciones__ImagenEspeciales1 {
-                    grid-area: ImagenEspeciales1;
-                    display: flex;
-                    .padreDeSecciones__imgGatoInmuno {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        margin: auto;
-                        border-radius: 20px;
-                    }
-                }
-            }
-        }
-        .padreDeSecciones__seccion2Especiales {
-            grid-area: seccion2Especiales;
-            background-color: #7fbce4;
-            border-radius: 20px;
-            .padreDeSecciones__padreDEseccion2Especiales {
-                display: grid;
-                row-gap: 10px;
-                grid-template-columns: 1fr;
-                grid-template-areas: "DescripcionEspeciales2" "ImagenEspeciales2";
-                .padreDeSecciones__DescripcionEspeciales2 {
-                    grid-area: DescripcionEspeciales2;
-                }
-                .padreDeSecciones__ImagenEspeciales2 {
-                    grid-area: ImagenEspeciales2;
-                    display: flex;
-                    .padreDeSecciones__imgRagdollEspeciales {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        margin: auto;
-                        border-radius: 20px;
-                    }
-                }
-            }
-        }
-        .padreDeSecciones__seccion3Especiales {
-            grid-area: seccion3Especiales;
-            background-color: #7fbce4;
-            border-radius: 20px;
-            .padreDeSecciones__padreDEseccion3Especiales {
-                display: grid;
-                row-gap: 10px;
-                grid-template-columns: 1fr;
-                grid-template-areas: "DescripcionEspeciales3" "ImagenEspeciales3";
-                .padreDeSecciones__DescripcionEspeciales3 {
-                    grid-area: DescripcionEspeciales3;
-                }
-                .padreDeSecciones__ImagenEspeciales3 {
-                    grid-area: ImagenEspeciales3;
-                    display: flex;
-                    .padreDeSecciones__gatoCiego {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        margin: auto;
-                        border-radius: 20px;
-                    }
-                }
-            }
-        }
-        .padreDeSecciones__seccion4Especiales {
-            grid-area: seccion4Especiales;
-            .padreDeSecciones__padreDEseccion4Especiales {
-                display: grid;
-                row-gap: 10px;
-                border-radius: 20px;
-                grid-template-columns: 1fr;
-                background-color: #7fbce4;
-                grid-template-areas: "DescripcionEspeciales4" "ImagenEspeciales4";
-                .padreDeSecciones__DescripcionEspeciales4 {
-                    grid-area: DescripcionEspeciales4;
-                }
-                .padreDeSecciones__ImagenEspeciales4 {
-                    grid-area: ImagenEspeciales4;
-                    display: flex;
-                    .padreDeSecciones__imgGatoEpileptico {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                        margin: auto;
-                        border-radius: 20px;
-                    }
-                }
-            }
-        }
+  @media only screen and (min-width: 320px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 55px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
+    .padreDeSecciones__introduccionEspeciales {
+      grid-area: introduccionEspeciales;
+      background-color: #72a5c6;
     }
-    @media only screen and (min-width: 768px) {
+    .padreDeSecciones__seccion1Especiales {
+      grid-area: seccion1Especiales;
+      background-color: #72a5c6;
+      border-radius: 20px;
+      .padreDeSecciones__padreDEseccion1Especiales {
         display: grid;
         grid-template-columns: 1fr;
-        column-gap: 10px;
         row-gap: 10px;
-        grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
-        .padreDeSecciones__introduccionEspeciales {
-            grid-area: introduccionEspeciales;
+        grid-template-areas: "DescripcionEspeciales1" "ImagenEspeciales1";
+        .padreDeSecciones__DescripcionEspeciales1 {
+          grid-area: DescripcionEspeciales1;
         }
-        .padreDeSecciones__seccion1Especiales {
-            grid-area: seccion1Especiales;
-            .padreDeSecciones__padreDEseccion1Especiales {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 10px;
-                grid-template-areas: "DescripcionEspeciales1 ImagenEspeciales1" "DescripcionEspeciales1 ImagenEspeciales1";
-                .padreDeSecciones__DescripcionEspeciales1 {
-                    grid-area: DescripcionEspeciales1;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .padreDeSecciones__ImagenEspeciales1 {
-                    grid-area: ImagenEspeciales1;
-                }
-            }
+        .padreDeSecciones__ImagenEspeciales1 {
+          grid-area: ImagenEspeciales1;
+          display: flex;
+          .padreDeSecciones__imgGatoInmuno {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+          }
         }
-        .padreDeSecciones__seccion2Especiales {
-            grid-area: seccion2Especiales;
-            .padreDeSecciones__padreDEseccion2Especiales {
-                display: grid;
-                row-gap: 10px;
-                border-radius: 20px;
-                grid-template-columns: 1fr 1fr;
-                background-color: #7fbce4;
-                grid-template-areas: "DescripcionEspeciales2 ImagenEspeciales2" " DescripcionEspeciales2 ImagenEspeciales2";
-                .padreDeSecciones__DescripcionEspeciales2 {
-                    grid-area: DescripcionEspeciales2;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .padreDeSecciones__ImagenEspeciales2 {
-                    grid-area: ImagenEspeciales2;
-                    display: flex;
-                }
-            }
-        }
-        .padreDeSecciones__seccion3Especiales {
-            grid-area: seccion3Especiales;
-            .padreDeSecciones__padreDEseccion3Especiales {
-                display: grid;
-                row-gap: 10px;
-                border-radius: 20px;
-                grid-template-columns: 1fr 1fr;
-                background-color: #7fbce4;
-                grid-template-areas: "DescripcionEspeciales3 ImagenEspeciales3" "DescripcionEspeciales3 ImagenEspeciales3";
-                .padreDeSecciones__DescripcionEspeciales3 {
-                    grid-area: DescripcionEspeciales3;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .padreDeSecciones__ImagenEspeciales3 {
-                    grid-area: ImagenEspeciales3;
-                    display: flex;
-                }
-            }
-        }
-        .padreDeSecciones__seccion4Especiales {
-            grid-area: seccion4Especiales;
-            .padreDeSecciones__padreDEseccion4Especiales {
-                display: grid;
-                row-gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                background-color: #72a5c6;
-                grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4";
-                .padreDeSecciones__DescripcionEspeciales4 {
-                    grid-area: DescripcionEspeciales4;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .padreDeSecciones__ImagenEspeciales4 {
-                    grid-area: ImagenEspeciales4;
-                    display: flex;
-                }
-            }
-        }
+      }
     }
-    @media only screen and (min-width: 1024px) {
+    .padreDeSecciones__seccion2Especiales {
+      grid-area: seccion2Especiales;
+      background-color: #7fbce4;
+      border-radius: 20px;
+      .padreDeSecciones__padreDEseccion2Especiales {
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "DescripcionEspeciales2" "ImagenEspeciales2";
+        .padreDeSecciones__DescripcionEspeciales2 {
+          grid-area: DescripcionEspeciales2;
+        }
+        .padreDeSecciones__ImagenEspeciales2 {
+          grid-area: ImagenEspeciales2;
+          display: flex;
+          .padreDeSecciones__imgRagdollEspeciales {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+    .padreDeSecciones__seccion3Especiales {
+      grid-area: seccion3Especiales;
+      background-color: #7fbce4;
+      border-radius: 20px;
+      .padreDeSecciones__padreDEseccion3Especiales {
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "DescripcionEspeciales3" "ImagenEspeciales3";
+        .padreDeSecciones__DescripcionEspeciales3 {
+          grid-area: DescripcionEspeciales3;
+        }
+        .padreDeSecciones__ImagenEspeciales3 {
+          grid-area: ImagenEspeciales3;
+          display: flex;
+          .padreDeSecciones__gatoCiego {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+    .padreDeSecciones__seccion4Especiales {
+      grid-area: seccion4Especiales;
+      .padreDeSecciones__padreDEseccion4Especiales {
+        display: grid;
+        row-gap: 10px;
+        border-radius: 20px;
+        grid-template-columns: 1fr;
+        background-color: #7fbce4;
+        grid-template-areas: "DescripcionEspeciales4" "ImagenEspeciales4";
+        .padreDeSecciones__DescripcionEspeciales4 {
+          grid-area: DescripcionEspeciales4;
+        }
+        .padreDeSecciones__ImagenEspeciales4 {
+          grid-area: ImagenEspeciales4;
+          display: flex;
+          .padreDeSecciones__imgGatoEpileptico {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
+    .padreDeSecciones__introduccionEspeciales {
+      grid-area: introduccionEspeciales;
+    }
+    .padreDeSecciones__seccion1Especiales {
+      grid-area: seccion1Especiales;
+      .padreDeSecciones__padreDEseccion1Especiales {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 40px;
-        grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales";
+        row-gap: 10px;
+        grid-template-areas: "DescripcionEspeciales1 ImagenEspeciales1" "DescripcionEspeciales1 ImagenEspeciales1";
+        .padreDeSecciones__DescripcionEspeciales1 {
+          grid-area: DescripcionEspeciales1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .padreDeSecciones__ImagenEspeciales1 {
+          grid-area: ImagenEspeciales1;
+        }
+      }
     }
-    .padreDeSecciones__TamañoDeLetraEnTitulo {
-        font-size: 25px;
-        margin: 8px 15px;
-        letter-spacing: 1px;
-    }
-    .padreDeSecciones__TamañoDeLetraEnParrafo {
-        font-size: 15px;
-        margin: 8px 26px;
-        line-height: 18px;
-        letter-spacing: 1px;
-    }
-    .padreDeSecciones__cardsEspeciales {
-        transition: transform 0.5s;
-        margin: 0px 15px 0px 15px;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+    .padreDeSecciones__seccion2Especiales {
+      grid-area: seccion2Especiales;
+      .padreDeSecciones__padreDEseccion2Especiales {
+        display: grid;
+        row-gap: 10px;
         border-radius: 20px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #7fbce4;
+        grid-template-areas: "DescripcionEspeciales2 ImagenEspeciales2" " DescripcionEspeciales2 ImagenEspeciales2";
+        .padreDeSecciones__DescripcionEspeciales2 {
+          grid-area: DescripcionEspeciales2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .padreDeSecciones__ImagenEspeciales2 {
+          grid-area: ImagenEspeciales2;
+          display: flex;
+        }
+      }
     }
-    .padreDeSecciones__cardsEspeciales:hover {
-        transform: scale(1.03);
+    .padreDeSecciones__seccion3Especiales {
+      grid-area: seccion3Especiales;
+      .padreDeSecciones__padreDEseccion3Especiales {
+        display: grid;
+        row-gap: 10px;
+        border-radius: 20px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #7fbce4;
+        grid-template-areas: "DescripcionEspeciales3 ImagenEspeciales3" "DescripcionEspeciales3 ImagenEspeciales3";
+        .padreDeSecciones__DescripcionEspeciales3 {
+          grid-area: DescripcionEspeciales3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .padreDeSecciones__ImagenEspeciales3 {
+          grid-area: ImagenEspeciales3;
+          display: flex;
+        }
+      }
     }
-    .padreDeSecciones__clasesEnTitulos {
-        margin: 9px 9px;
-        font-size: 26px;
-        font-weight: 600;
+    .padreDeSecciones__seccion4Especiales {
+      grid-area: seccion4Especiales;
+      .padreDeSecciones__padreDEseccion4Especiales {
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #72a5c6;
+        grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4";
+        .padreDeSecciones__DescripcionEspeciales4 {
+          grid-area: DescripcionEspeciales4;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .padreDeSecciones__ImagenEspeciales4 {
+          grid-area: ImagenEspeciales4;
+          display: flex;
+        }
+      }
     }
-    .padreDeSecciones__clasesEnParrafos {
-        margin: 9px 9px;
-        font-size: 17px;
-    }
-    .btnAdoptar--margenesEspeciales {
-        display: block;
-        margin: 10px auto;
-    }
-    .btnvermasEstilos--margenesEspeciales {
-        display: block;
-        margin: 0px auto 35px;
-    }
+  }
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+    grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales";
+  }
+  .padreDeSecciones__TamañoDeLetraEnTitulo {
+    font-size: 25px;
+    margin: 8px 15px;
+    letter-spacing: 1px;
+  }
+  .padreDeSecciones__TamañoDeLetraEnParrafo {
+    font-size: 15px;
+    margin: 8px 26px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  .padreDeSecciones__cardsEspeciales {
+    transition: transform 0.5s;
+    margin: 0px 15px 0px 15px;
+    -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+    box-shadow: 5px 1px 18px -2px $color-fondo;
+    border-radius: 20px;
+  }
+  .padreDeSecciones__cardsEspeciales:hover {
+    transform: scale(1.03);
+  }
+  .padreDeSecciones__clasesEnTitulos {
+    margin: 9px 9px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .padreDeSecciones__clasesEnParrafos {
+    margin: 9px 9px;
+    font-size: 17px;
+  }
+  .btnAdoptar--margenesEspeciales {
+    display: block;
+    margin: 10px auto;
+  }
+  .btnvermasEstilos--margenesEspeciales {
+    display: block;
+    margin: 0px auto 35px;
+  }
 }
