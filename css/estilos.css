@@ -19,7 +19,7 @@
 
 /*body*/
 body {
-  background-color: #e7e2e2; }
+  background-color: #fff; }
 
 /*clases exclusivas del index.html*/
 @media only screen and (min-width: 320px) {
@@ -37,12 +37,17 @@ body {
     .contenedor .contenedor__frase {
       grid-area: miratmb; }
       .contenedor .contenedor__frase .contenedor__inspiradora {
-        font-size: 23px;
+        font-size: 30px;
         text-align: center;
         font-style: italic;
-        margin: 30px 0px;
+        font-weight: 600;
+        margin: 15px 0px 25px;
         color: black;
         background-color: transparent; }
+      .contenedor .contenedor__frase .contenedor_hr {
+        height: 4px;
+        opacity: 100;
+        background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); }
     .contenedor .contenedor__gato1 {
       grid-area: gato1;
       transition: transform 0.5s;
@@ -296,14 +301,26 @@ body {
 .main__titulo {
   text-align: left;
   font-weight: bold;
+  text-align: center;
   font-size: 35px;
-  margin: 20px 0px 0px 20px; }
+  margin: 14px 0px 0px; }
+
+.main_parrafo {
+  margin: 10px 0px 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #6d6d6d; }
+
+.main_hr {
+  height: 4px;
+  opacity: 100;
+  background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); }
 
 @media only screen and (min-width: 320px) {
   .Gatos3Grid {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #e7e2e2;
+    background-color: #fff;
     column-gap: 10px;
     row-gap: 50px;
     height: fit-content;
@@ -322,7 +339,7 @@ body {
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077B6;
+        background-color: #0077b6;
         -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
         box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
@@ -352,7 +369,7 @@ body {
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077B6;
+        background-color: #0077b6;
         -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
         box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
@@ -381,7 +398,7 @@ body {
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077B6;
+        background-color: #0077b6;
         -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
         box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
@@ -410,7 +427,7 @@ body {
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077B6;
+        background-color: #0077b6;
         -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
         box-shadow: 5px 1px 18px -2px #7fbce4; }
         .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
@@ -632,7 +649,7 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
-    grid-template-areas: "gatoEnAdopcion1 gatoEnAdopcion2"  "gatoEnAdopcion3 gatoEnAdopcion4" "botonDeVerMas botonDeVerMas"; }
+    grid-template-areas: "gatoEnAdopcion1 gatoEnAdopcion2" "gatoEnAdopcion3 gatoEnAdopcion4" "botonDeVerMas botonDeVerMas"; }
     .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
       grid-area: gatoEnAdopcion1; }
       .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
@@ -716,7 +733,7 @@ body {
   text-align: center; }
 
 .Gatos3Grid .fondoMascelesteClaro {
-  background-color: #00B4D8;
+  background-color: #00b4d8;
   border-radius: 20px 20px 0px 0px; }
 
 .Gatos3Grid .fondoCelesteMasClaroAun {
@@ -745,7 +762,7 @@ body {
     column-gap: 10px;
     row-gap: 55px;
     margin-bottom: 40px;
-    background-color: #e7e2e2;
+    background-color: #fff;
     grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
     .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
       grid-area: introduccionEspeciales;

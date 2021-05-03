@@ -27,7 +27,7 @@ $color-fondo: #7fbce4;
 /*body*/
 
 body {
-    background-color: rgb(231, 226, 226);
+    background-color: #fff;
 }
 
 
@@ -53,11 +53,17 @@ body {
         .contenedor__frase {
             grid-area: miratmb;
             .contenedor__inspiradora {
-                font-size: 23px;
+                font-size: 30px;
                 text-align: center;
                 font-style: italic;
-                margin: 30px 0px;
+                font-weight: 600;
+                margin: 15px 0px 25px;
                 @include estilos(black, transparent);
+            }
+            .contenedor_hr{
+                height: 4px;
+                opacity: 100;
+                background-image: linear-gradient(to right, rgb(231, 226, 226), #1d3557, rgb(231, 226, 226));
             }
         }
         .contenedor__gato1 {
