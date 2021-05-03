@@ -45,7 +45,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     grid-template-areas: "section1" "miratmb" "gato1 " "gato2 " "gato3 " "gato4 " "btnvermas";
-    .contenedor__section1 {
+    &.contenedor__section1 {
       grid-area: section1;
     }
     .contenedor__frase {
@@ -80,13 +80,13 @@ body {
         width: 100%;
         border-radius: 20px 20px 0 0;
         transition: transform 0.5s;
+        &:hover{
+          transform: scale(0.98);
+        }
       }
-      .contenedor__imgsiamesa:hover {
-        transform: scale(0.98);
+      &:hover {
+        transform: scale(1.05);
       }
-    }
-    .contenedor__gato1:hover {
-      transform: scale(1.05);
     }
     .contenedor__gato2 {
       grid-area: gato2;
@@ -99,13 +99,13 @@ body {
         width: 100%;
         border-radius: 20px 20px 0 0;
         transition: transform 0.5s;
+        &:hover {
+          transform: scale(0.98);
+        }
       }
-      .contenedor__imgAzulruso:hover {
-        transform: scale(0.98);
+      &:hover{
+        transform: scale(1.05);
       }
-    }
-    .contenedor__gato2:hover {
-      transform: scale(1.05);
     }
     .contenedor__gato3 {
       grid-area: gato3;
@@ -118,13 +118,13 @@ body {
         transition: transform 0.5s;
         width: 100%;
         border-radius: 20px 20px 0 0;
+        &:hover{
+          transform: scale(0.98);
+        }
       }
-      .contenedor__imgGatoBombay:hover {
-        transform: scale(0.98);
+      &:hover{
+        transform: scale(1.05);
       }
-    }
-    .contenedor__gato3:hover {
-      transform: scale(1.05);
     }
     .contenedor__gato4 {
       grid-area: gato4;
@@ -137,13 +137,13 @@ body {
         transition: transform 0.5s;
         width: 100%;
         border-radius: 20px 20px 0 0;
+        &:hover{
+          transform: scale(0.98);
+        }
       }
-      .contenedor__imgEuropeo:hover {
-        transform: scale(0.98);
+      &:hover{
+        transform: scale(1.05);
       }
-    }
-    .contenedor__gato4:hover {
-      transform: scale(1.05);
     }
     .contenedor__btnvermas {
       grid-area: btnvermas;
