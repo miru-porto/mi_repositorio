@@ -8,7 +8,7 @@ La temática de mi proyecto es la adopción de gatos. Más específicamente, me 
 ## Estructura HTML
 El trabajo cuenta con **5 secciones y una subseccion**, las cuales siguen el siguiente orden: "index.html", "Gatos3.html", "especiales.hmtl", "nosotros.html", "formulario.html" (y una subseccion llamada "recibido.html"). 
 
-## Estructura SCSS
+## Estructura SASS
 Con respecto a la carpeta scss, esta posee **5 archivos** de los cuales 4 están importados hacia "estilos.scss". A partir de allí y, gracias al uso de node.js, dichos archivos scss se compilan en la carpeta css, en un archivo llamado estilos.css.
 
 Se añaden **comentarios** al principio y/o al final de las hojas de estilo scss para dar a entender que las clases a continuación son **propias y exclusivas** de sus respectivos html a los cuales hace referencia. 
