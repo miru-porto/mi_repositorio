@@ -879,6 +879,12 @@ body {
           justify-content: space-between; }
         .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 {
           grid-area: ImagenEspeciales1; }
+          .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 .padreDeSecciones__imgGatoInmuno {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 0 20px 20px 0; }
     .padreDeSecciones .padreDeSecciones__seccion2Especiales {
       grid-area: seccion2Especiales; }
       .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales {
@@ -897,6 +903,12 @@ body {
         .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 {
           grid-area: ImagenEspeciales2;
           display: flex; }
+          .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 .padreDeSecciones__imgRagdollEspeciales {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 0 20px 20px 0; }
     .padreDeSecciones .padreDeSecciones__seccion3Especiales {
       grid-area: seccion3Especiales; }
       .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales {
@@ -915,6 +927,12 @@ body {
         .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 {
           grid-area: ImagenEspeciales3;
           display: flex; }
+          .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 .padreDeSecciones__gatoCiego {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 0 20px 20px 0; }
     .padreDeSecciones .padreDeSecciones__seccion4Especiales {
       grid-area: seccion4Especiales; }
       .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales {
@@ -931,7 +949,13 @@ body {
           justify-content: space-between; }
         .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 {
           grid-area: ImagenEspeciales4;
-          display: flex; } }
+          display: flex; }
+          .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 .padreDeSecciones__imgGatoEpileptico {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 0 20px 20px 0; } }
 
 @media only screen and (min-width: 1024px) {
   .padreDeSecciones {
