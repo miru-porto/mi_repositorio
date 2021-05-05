@@ -3,23 +3,27 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 /*selector de texto*/
 ::selection {
   color: white;
-  background: #1d3557; }
+  background: #1d3557;
+}
 
 /*header*/
 .barraDEnavegacion {
   position: sticky;
   top: 0px;
   z-index: 3;
-  background-color: #1d3557; }
+  background-color: #1d3557;
+}
 
 /*body*/
 body {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 /*clases exclusivas del index.html*/
 @media only screen and (min-width: 320px) {
@@ -31,177 +35,233 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
-    grid-template-areas: "section1" "miratmb" "gato1 " "gato2 " "gato3 " "gato4 " "btnvermas"; }
-    .contenedor.contenedor__section1 {
-      grid-area: section1; }
-    .contenedor .contenedor__frase {
-      grid-area: miratmb; }
-      .contenedor .contenedor__frase .contenedor__inspiradora {
-        font-size: 30px;
-        text-align: center;
-        font-style: italic;
-        font-weight: 600;
-        margin: 15px 0px 25px;
-        color: black;
-        background-color: transparent; }
-      .contenedor .contenedor__frase .contenedor_hr {
-        height: 4px;
-        opacity: 100;
-        background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); }
-    .contenedor .contenedor__gato1 {
-      grid-area: gato1;
-      transition: transform 0.5s;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-between; }
-      .contenedor .contenedor__gato1 .contenedor__imgsiamesa {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        transition: transform 0.5s; }
-        .contenedor .contenedor__gato1 .contenedor__imgsiamesa:hover {
-          transform: scale(0.98); }
-      .contenedor .contenedor__gato1:hover {
-        transform: scale(1.05); }
-    .contenedor .contenedor__gato2 {
-      grid-area: gato2;
-      transition: transform 0.5s;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-between; }
-      .contenedor .contenedor__gato2 .contenedor__imgAzulruso {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        transition: transform 0.5s; }
-        .contenedor .contenedor__gato2 .contenedor__imgAzulruso:hover {
-          transform: scale(0.98); }
-      .contenedor .contenedor__gato2:hover {
-        transform: scale(1.05); }
-    .contenedor .contenedor__gato3 {
-      grid-area: gato3;
-      transition: transform 0.5s;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-between; }
-      .contenedor .contenedor__gato3 .contenedor__imgGatoBombay {
-        transition: transform 0.5s;
-        width: 100%;
-        border-radius: 20px 20px 0 0; }
-        .contenedor .contenedor__gato3 .contenedor__imgGatoBombay:hover {
-          transform: scale(0.98); }
-      .contenedor .contenedor__gato3:hover {
-        transform: scale(1.05); }
-    .contenedor .contenedor__gato4 {
-      grid-area: gato4;
-      transition: transform 0.5s;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-between; }
-      .contenedor .contenedor__gato4 .contenedor__imgEuropeo {
-        transition: transform 0.5s;
-        width: 100%;
-        border-radius: 20px 20px 0 0; }
-        .contenedor .contenedor__gato4 .contenedor__imgEuropeo:hover {
-          transform: scale(0.98); }
-      .contenedor .contenedor__gato4:hover {
-        transform: scale(1.05); }
-    .contenedor .contenedor__btnvermas {
-      grid-area: btnvermas; }
-      .contenedor .contenedor__btnvermas .btnvermasEstilos--margenes {
-        display: block;
-        margin: 0px auto 33px; } }
+    grid-template-areas: "section1" "miratmb" "gato1 " "gato2 " "gato3 " "gato4 " "btnvermas";
+  }
+  .contenedor.contenedor__section1 {
+    grid-area: section1;
+  }
+  .contenedor .contenedor__frase {
+    grid-area: miratmb;
+  }
+  .contenedor .contenedor__frase .contenedor__inspiradora {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    margin: 15px 0px 25px;
+    color: black;
+    background-color: transparent;
+  }
+  .contenedor .contenedor__frase .contenedor_hr {
+    height: 4px;
+    opacity: 100;
+    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2);
+  }
+  .contenedor .contenedor__gato1 {
+    grid-area: gato1;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .contenedor .contenedor__gato1 .contenedor__imgsiamesa {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.5s;
+  }
+  .contenedor .contenedor__gato1 .contenedor__imgsiamesa:hover {
+    transform: scale(0.98);
+  }
+  .contenedor .contenedor__gato1:hover {
+    transform: scale(1.05);
+  }
+  .contenedor .contenedor__gato2 {
+    grid-area: gato2;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .contenedor .contenedor__gato2 .contenedor__imgAzulruso {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.5s;
+  }
+  .contenedor .contenedor__gato2 .contenedor__imgAzulruso:hover {
+    transform: scale(0.98);
+  }
+  .contenedor .contenedor__gato2:hover {
+    transform: scale(1.05);
+  }
+  .contenedor .contenedor__gato3 {
+    grid-area: gato3;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .contenedor .contenedor__gato3 .contenedor__imgGatoBombay {
+    transition: transform 0.5s;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .contenedor .contenedor__gato3 .contenedor__imgGatoBombay:hover {
+    transform: scale(0.98);
+  }
+  .contenedor .contenedor__gato3:hover {
+    transform: scale(1.05);
+  }
+  .contenedor .contenedor__gato4 {
+    grid-area: gato4;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .contenedor .contenedor__gato4 .contenedor__imgEuropeo {
+    transition: transform 0.5s;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .contenedor .contenedor__gato4 .contenedor__imgEuropeo:hover {
+    transform: scale(0.98);
+  }
+  .contenedor .contenedor__gato4:hover {
+    transform: scale(1.05);
+  }
+  .contenedor .contenedor__btnvermas {
+    grid-area: btnvermas;
+  }
+  .contenedor .contenedor__btnvermas .btnvermasEstilos--margenes {
+    display: block;
+    margin: 0px auto 33px;
+  }
+}
 
 @media only screen and (min-width: 480px) {
   .contenedor {
     grid-template-columns: 1fr;
     row-gap: 33px;
-    grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas"; }
-    .contenedor .contenedor__section1 {
-      grid-area: section1; }
-    .contenedor .contenedor__frase {
-      grid-area: miratmb; }
-    .contenedor .contenedor__gato1 {
-      grid-area: gato1;
-      background-color: #7fbce4; }
-    .contenedor .contenedor__gato2 {
-      grid-area: gato2;
-      background-color: #7fbce4; }
-    .contenedor .contenedor__gato3 {
-      grid-area: gato3;
-      background-color: #7fbce4; }
-    .contenedor .contenedor__gato4 {
-      grid-area: gato4;
-      background-color: #7fbce4; }
-    .contenedor .contenedor__btnvermas {
-      grid-area: btnvermas; } }
+    grid-template-areas: "section1" "miratmb" "gato1" "gato2" "gato3" "gato4" "btnvermas";
+  }
+  .contenedor .contenedor__section1 {
+    grid-area: section1;
+  }
+  .contenedor .contenedor__frase {
+    grid-area: miratmb;
+  }
+  .contenedor .contenedor__gato1 {
+    grid-area: gato1;
+    background-color: #7fbce4;
+  }
+  .contenedor .contenedor__gato2 {
+    grid-area: gato2;
+    background-color: #7fbce4;
+  }
+  .contenedor .contenedor__gato3 {
+    grid-area: gato3;
+    background-color: #7fbce4;
+  }
+  .contenedor .contenedor__gato4 {
+    grid-area: gato4;
+    background-color: #7fbce4;
+  }
+  .contenedor .contenedor__btnvermas {
+    grid-area: btnvermas;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .contenedor {
     grid-template-columns: 1fr 1fr;
     row-gap: 33px;
-    grid-template-areas: "section1 section1" "miratmb miratmb" "gato1  gato2" "gato3 gato4" "btnvermas btnvermas"; }
-    .contenedor .contenedor__section1 {
-      grid-area: section1; }
-    .contenedor .contenedor__gato1 {
-      grid-area: gato1; }
-    .contenedor .contenedor__gato2 {
-      grid-area: gato2; }
-    .contenedor .contenedor__gato3 {
-      grid-area: gato3; }
-    .contenedor .contenedor__gato4 {
-      grid-area: gato4; }
-    .contenedor .contenedor__btnvermas {
-      grid-area: btnvermas; } }
+    grid-template-areas: "section1 section1" "miratmb miratmb" "gato1  gato2" "gato3 gato4" "btnvermas btnvermas";
+  }
+  .contenedor .contenedor__section1 {
+    grid-area: section1;
+  }
+  .contenedor .contenedor__gato1 {
+    grid-area: gato1;
+  }
+  .contenedor .contenedor__gato2 {
+    grid-area: gato2;
+  }
+  .contenedor .contenedor__gato3 {
+    grid-area: gato3;
+  }
+  .contenedor .contenedor__gato4 {
+    grid-area: gato4;
+  }
+  .contenedor .contenedor__btnvermas {
+    grid-area: btnvermas;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
-    grid-template-areas: "section1 section1 section1 section1" "miratmb miratmb miratmb miratmb" "gato1 gato2 gato3 gato4" "btnvermas btnvermas btnvermas btnvermas"; }
-    .contenedor .contenedor__section1 {
-      grid-area: section1; }
-    .contenedor .contenedor__frase {
-      grid-area: miratmb; }
-    .contenedor .contenedor__gato1 {
-      grid-area: gato1; }
-    .contenedor .contenedor__gato2 {
-      grid-area: gato2; }
-    .contenedor .contenedor__gato3 {
-      grid-area: gato3; }
-    .contenedor .contenedor__gato4 {
-      grid-area: gato4; }
-    .contenedor .contenedor__btnvermas {
-      grid-area: btnvermas; }
-      .contenedor .contenedor__btnvermas .contenedor__btnvermas {
-        margin-bottom: 15px; } }
+    grid-template-areas: "section1 section1 section1 section1" "miratmb miratmb miratmb miratmb" "gato1 gato2 gato3 gato4" "btnvermas btnvermas btnvermas btnvermas";
+  }
+  .contenedor .contenedor__section1 {
+    grid-area: section1;
+  }
+  .contenedor .contenedor__frase {
+    grid-area: miratmb;
+  }
+  .contenedor .contenedor__gato1 {
+    grid-area: gato1;
+  }
+  .contenedor .contenedor__gato2 {
+    grid-area: gato2;
+  }
+  .contenedor .contenedor__gato3 {
+    grid-area: gato3;
+  }
+  .contenedor .contenedor__gato4 {
+    grid-area: gato4;
+  }
+  .contenedor .contenedor__btnvermas {
+    grid-area: btnvermas;
+  }
+  .contenedor .contenedor__btnvermas .contenedor__btnvermas {
+    margin-bottom: 15px;
+  }
+}
 
 .contenedor .contenedor__nombreDEgatos1234 {
   color: black;
   background-color: transparent;
   font-weight: bold;
-  margin: 10px 0px 8px 15px; }
+  margin: 10px 0px 8px 15px;
+}
 
 .contenedor .contenedor__estilosListas {
   line-height: 28px;
-  font-size: 17px; }
+  font-size: 17px;
+}
 
 .contenedor .contenedorBtnAdoptar {
   display: flex;
-  margin: 0px auto 12px; }
+  margin: 0px auto 12px;
+}
 
 .contenedor .estilosGatos1234 {
   background-color: #7fbce4;
   margin: 0px 15px 0px 15px;
   border-radius: 20px;
   -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
-  box-shadow: 5px 1px 18px -2px #7fbce4; }
+  box-shadow: 5px 1px 18px -2px #7fbce4;
+}
 
 .contenedor .contenedor__CarouselParrafo {
-  background-color: rgba(180, 179, 179, 0.479); }
+  background-color: rgba(180, 179, 179, 0.479);
+}
 
 .btnAdoptar {
   border: 5px solid lightgray;
@@ -210,9 +270,11 @@ body {
   font-size: 15px;
   font-weight: bold;
   transition: transform 0.5s;
-  display: flex; }
-  .btnAdoptar:hover {
-    transform: scale(1.1); }
+  display: flex;
+}
+.btnAdoptar:hover {
+  transform: scale(1.1);
+}
 
 .btnvermasEstilos {
   border: 5px solid lightgray;
@@ -221,107 +283,178 @@ body {
   height: 50px;
   font-size: 20px;
   font-weight: bold;
-  transition: transform 0.5s; }
-  .btnvermasEstilos:hover {
-    transform: scale(1.1); }
+  transition: transform 0.5s;
+}
+.btnvermasEstilos:hover {
+  transform: scale(1.1);
+}
 
 /*footer*/
 .footer {
-  background-color: #1d3557; }
-  .footer .footer__padreDiv1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; }
-    .footer .footer__padreDiv1 .footer__padreLogoYNombre {
-      padding: 25px 4px; }
-      .footer .footer__padreDiv1 .footer__padreLogoYNombre .footer__hijologo {
-        width: 35px;
-        height: 35px;
-        margin: -11px 0px 0px 0px; }
-      .footer .footer__padreDiv1 .footer__padreLogoYNombre .footer__enlace {
-        margin: 5px 10px;
-        text-decoration: none; }
-        .footer .footer__padreDiv1 .footer__padreLogoYNombre .footer__enlace .footer__hijoNombre {
-          display: inline;
-          color: azure; }
-    .footer .footer__padreDiv1 .footer__promocionEnRedesSociales {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-evenly;
-      height: 100px;
-      align-items: center; }
-      .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__mensaje1 {
-        color: azure;
-        padding: 0px 20px 0px; }
-      .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__enlaceFooter {
-        margin: 5px 10px;
-        text-decoration: none; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__enlaceFooter .footer__hijoLogosRedes1 {
-          display: inline;
-          margin-top: 1%;
-          width: 20px; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__enlaceFooter .footer__hijosNombresRedes {
-          display: inline;
-          color: azure; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__enlaceFooter .footer__hijosNombresRedes:hover {
-          color: #d2dddd; }
-      .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__ConEnlace {
-        margin: 5px 10px;
-        text-decoration: none; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__ConEnlace .footer__hijoRedes1 {
-          display: inline;
-          margin-top: 1%;
-          width: 20px; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__ConEnlace .footer__hijosNombresEnLasRedes {
-          display: inline;
-          color: azure; }
-        .footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__padreRedes1 .footer__ConEnlace .footer__hijosNombresEnLasRedes:hover {
-          color: #d2dddd; }
-  .footer .footer__hr {
-    background-color: cadetblue;
-    height: 1px;
-    margin: 0px auto;
-    opacity: 20%; }
-  .footer .footer__padreDiv2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    height: fit-content;
-    margin: 10px 0px 0px 0px; }
-    .footer .footer__padreDiv2 .footer__itemsEnlaces {
-      color: azure;
-      margin: 0px 10px;
-      text-decoration: none; }
-    .footer .footer__padreDiv2 .footer__itemsEnlaces:hover {
-      color: #c5cccc; }
-    .footer .footer__padreDiv2 .footer_derechosDeAutor {
-      color: azure;
-      margin: 0px 2% 0px 0px; }
+  background-color: #1d3557;
+}
+.footer .footer__padreDiv1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.footer .footer__padreDiv1 .footer__padreLogoYNombre {
+  padding: 25px 4px;
+}
+.footer .footer__padreDiv1 .footer__padreLogoYNombre .footer__hijologo {
+  width: 35px;
+  height: 35px;
+  margin: -11px 0px 0px 0px;
+}
+.footer .footer__padreDiv1 .footer__padreLogoYNombre .footer__enlace {
+  margin: 5px 10px;
+  text-decoration: none;
+}
+.footer
+  .footer__padreDiv1
+  .footer__padreLogoYNombre
+  .footer__enlace
+  .footer__hijoNombre {
+  display: inline;
+  color: azure;
+}
+.footer .footer__padreDiv1 .footer__promocionEnRedesSociales {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+}
+.footer .footer__padreDiv1 .footer__promocionEnRedesSociales .footer__mensaje1 {
+  color: azure;
+  padding: 0px 20px 0px;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__enlaceFooter {
+  margin: 5px 10px;
+  text-decoration: none;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__enlaceFooter
+  .footer__hijoLogosRedes1 {
+  display: inline;
+  margin-top: 1%;
+  width: 20px;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__enlaceFooter
+  .footer__hijosNombresRedes {
+  display: inline;
+  color: azure;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__enlaceFooter
+  .footer__hijosNombresRedes:hover {
+  color: #d2dddd;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__ConEnlace {
+  margin: 5px 10px;
+  text-decoration: none;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__ConEnlace
+  .footer__hijoRedes1 {
+  display: inline;
+  margin-top: 1%;
+  width: 20px;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__ConEnlace
+  .footer__hijosNombresEnLasRedes {
+  display: inline;
+  color: azure;
+}
+.footer
+  .footer__padreDiv1
+  .footer__promocionEnRedesSociales
+  .footer__padreRedes1
+  .footer__ConEnlace
+  .footer__hijosNombresEnLasRedes:hover {
+  color: #d2dddd;
+}
+.footer .footer__hr {
+  background-color: cadetblue;
+  height: 1px;
+  margin: 0px auto;
+  opacity: 20%;
+}
+.footer .footer__padreDiv2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: fit-content;
+  margin: 10px 0px 0px 0px;
+}
+.footer .footer__padreDiv2 .footer__itemsEnlaces {
+  color: azure;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.footer .footer__padreDiv2 .footer__itemsEnlaces:hover {
+  color: #c5cccc;
+}
+.footer .footer__padreDiv2 .footer_derechosDeAutor {
+  color: azure;
+  margin: 0px 2% 0px 0px;
+}
 
 .main__titulo {
   text-align: left;
   font-weight: bold;
   text-align: center;
   font-size: 35px;
-  margin: 14px 0px 0px; }
+  margin: 14px 0px 0px;
+}
 
 .main_parrafo {
   margin: 10px 0px 0px;
   text-align: center;
   font-size: 18px;
-  color: #6d6d6d; }
+  color: #6d6d6d;
+}
 
 @media only screen and (max-width: 768px) {
   .main_hr {
     height: 1px;
     opacity: 100;
-    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); } }
+    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2);
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .main_hr {
     height: 4px !important;
     opacity: 100;
-    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); } }
+    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2);
+  }
+}
 
 @media only screen and (min-width: 320px) {
   .Gatos3Grid {
@@ -334,140 +467,256 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     padding-top: 40px;
-    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas"; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
-      grid-area: gatoEnAdopcion1; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre1" "parte2Imagen1" "parte3Descripcion1" "parte4Lista1" "parte5Btn1";
-        width: 90%;
-        border-radius: 20px;
-        margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
-        box-shadow: 5px 1px 18px -2px #7fbce4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
-          grid-area: parte1Nombre1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 {
-          grid-area: parte2Imagen1;
-          display: flex; }
-          .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 .Gatos3Grid__imgGatoconbotas {
-            display: block;
-            margin: auto;
-            width: 100%; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte3Descripcion1 {
-          grid-area: parte3Descripcion1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte4Lista1 {
-          grid-area: parte4Lista1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gato3Grid__parte5Btn1 {
-          grid-area: parte5Btn1; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
-      grid-area: gatoEnAdopcion2;
-      transition: transform 0.5s; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre2" "parte2Imagen2" "parte3Descripcion2" "parte4Listas2" "parte5Btn2";
-        width: 90%;
-        border-radius: 20px;
-        margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
-        box-shadow: 5px 1px 18px -2px #7fbce4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
-          grid-area: parte1Nombre2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 {
-          grid-area: parte2Imagen2;
-          display: flex; }
-          .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 .Gatos3Grid__imgGatoquenoquierecomer {
-            width: 100%;
-            display: block;
-            margin: auto; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte3Descripcion2 {
-          grid-area: parte3Descripcion2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte4Listas2 {
-          grid-area: parte4Listas2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte5Btn2 {
-          grid-area: parte5Btn2; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
-      grid-area: gatoEnAdopcion3; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre3" "parte2Imagen3" "parte3Descripcion3" "parte4Listas3" "parte5Btn3";
-        width: 90%;
-        border-radius: 20px;
-        margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
-        box-shadow: 5px 1px 18px -2px #7fbce4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
-          grid-area: parte1Nombre3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 {
-          grid-area: parte2Imagen3;
-          display: flex; }
-          .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 .Gatos3Grid__imgMiguel {
-            width: 100%;
-            display: block;
-            margin: auto; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte3Descripcion3 {
-          grid-area: parte3Descripcion3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte4Listas3 {
-          grid-area: parte4Listas3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte5Btn3 {
-          grid-area: parte5Btn3; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
-      grid-area: gatoEnAdopcion4; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre4" "parte2Imagen4" "parte3Descripcion4" "parte4Listas4" "parte5Btn4";
-        width: 90%;
-        border-radius: 20px;
-        margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
-        box-shadow: 5px 1px 18px -2px #7fbce4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
-          grid-area: parte1Nombre4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 {
-          grid-area: parte2Imagen4;
-          display: flex; }
-          .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 .Gatos3Grid__imgGatoyohabiaponidomiscosasaqui {
-            width: 100%;
-            display: block;
-            margin: auto; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte3Descripcion4 {
-          grid-area: parte3Descripcion4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte4Listas4 {
-          grid-area: parte4Listas4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
-          grid-area: parte5Btn4; }
-    .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; }
-    .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
-      display: block;
-      margin: 0px auto 35px; }
-    .Gatos3Grid .cardGatos3 {
-      transition: transform 0.5s; }
-    .Gatos3Grid .cardGatos3:hover {
-      transform: scale(1.03); }
-    .Gatos3Grid .gatosContenedorListas {
-      display: flex; }
-    .Gatos3Grid .Gatos3Grid__listasGatos3 {
-      list-style-position: inside;
-      margin: auto 0;
-      line-height: 1.5em;
-      font-size: 1.2em; } }
+    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas";
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
+    grid-area: gatoEnAdopcion1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre1" "parte2Imagen1" "parte3Descripcion1" "parte4Lista1" "parte5Btn1";
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #0077b6;
+    -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+    box-shadow: 5px 1px 18px -2px #7fbce4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte1Nombre1 {
+    grid-area: parte1Nombre1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte2Imagen1 {
+    grid-area: parte2Imagen1;
+    display: flex;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte2Imagen1
+    .Gatos3Grid__imgGatoconbotas {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte3Descripcion1 {
+    grid-area: parte3Descripcion1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte4Lista1 {
+    grid-area: parte4Lista1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gato3Grid__parte5Btn1 {
+    grid-area: parte5Btn1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
+    grid-area: gatoEnAdopcion2;
+    transition: transform 0.5s;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre2" "parte2Imagen2" "parte3Descripcion2" "parte4Listas2" "parte5Btn2";
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #0077b6;
+    -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+    box-shadow: 5px 1px 18px -2px #7fbce4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte1Nombre2 {
+    grid-area: parte1Nombre2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte2Imagen2 {
+    grid-area: parte2Imagen2;
+    display: flex;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte2Imagen2
+    .Gatos3Grid__imgGatoquenoquierecomer {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte3Descripcion2 {
+    grid-area: parte3Descripcion2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte4Listas2 {
+    grid-area: parte4Listas2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte5Btn2 {
+    grid-area: parte5Btn2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
+    grid-area: gatoEnAdopcion3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre3" "parte2Imagen3" "parte3Descripcion3" "parte4Listas3" "parte5Btn3";
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #0077b6;
+    -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+    box-shadow: 5px 1px 18px -2px #7fbce4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte1Nombre3 {
+    grid-area: parte1Nombre3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte2Imagen3 {
+    grid-area: parte2Imagen3;
+    display: flex;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte2Imagen3
+    .Gatos3Grid__imgMiguel {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte3Descripcion3 {
+    grid-area: parte3Descripcion3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte4Listas3 {
+    grid-area: parte4Listas3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte5Btn3 {
+    grid-area: parte5Btn3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
+    grid-area: gatoEnAdopcion4;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre4" "parte2Imagen4" "parte3Descripcion4" "parte4Listas4" "parte5Btn4";
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #0077b6;
+    -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
+    box-shadow: 5px 1px 18px -2px #7fbce4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte1Nombre4 {
+    grid-area: parte1Nombre4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte2Imagen4 {
+    grid-area: parte2Imagen4;
+    display: flex;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte2Imagen4
+    .Gatos3Grid__imgGatoyohabiaponidomiscosasaqui {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte3Descripcion4 {
+    grid-area: parte3Descripcion4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte4Listas4 {
+    grid-area: parte4Listas4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte5Btn4 {
+    grid-area: parte5Btn4;
+  }
+  .Gatos3Grid .Gatos3Grid__botonDeVerMas {
+    grid-area: botonDeVerMas;
+  }
+  .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
+    display: block;
+    margin: 0px auto 35px;
+  }
+  .Gatos3Grid .cardGatos3 {
+    transition: transform 0.5s;
+  }
+  .Gatos3Grid .cardGatos3:hover {
+    transform: scale(1.03);
+  }
+  .Gatos3Grid .gatosContenedorListas {
+    display: flex;
+  }
+  .Gatos3Grid .Gatos3Grid__listasGatos3 {
+    list-style-position: inside;
+    margin: auto 0;
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
+}
 
 @media only screen and (min-width: 480px) {
   .Gatos3Grid {
@@ -478,89 +727,183 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
-    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas"; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
-      grid-area: gatoEnAdopcion1; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1" "parte2Imagen1 parte3Descripcion1" "parte4Lista1 parte4Lista1" "parte5Btn1 parte5Btn1"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
-          grid-area: parte1Nombre1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 {
-          grid-area: parte2Imagen1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte3Descripcion1 {
-          grid-area: parte3Descripcion1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte4Lista1 {
-          grid-area: parte4Lista1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gato3Grid__parte5Btn1 {
-          grid-area: parte5Btn1; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
-      grid-area: gatoEnAdopcion2; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2" "parte2Imagen2 parte3Descripcion2" "parte4Listas2 parte4Listas2" "parte5Btn2 parte5Btn2"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
-          grid-area: parte1Nombre2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 {
-          grid-area: parte2Imagen2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte3Descripcion2 {
-          grid-area: parte3Descripcion2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte4Listas2 {
-          grid-area: parte4Listas2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte5Btn2 {
-          grid-area: parte5Btn2; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
-      grid-area: gatoEnAdopcion3; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3" "parte2Imagen3 parte3Descripcion3" "parte4Listas3 parte4Listas3" "parte5Btn3 parte5Btn3"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
-          grid-area: parte1Nombre3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 {
-          grid-area: parte2Imagen3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte3Descripcion3 {
-          grid-area: parte3Descripcion3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte4Listas3 {
-          grid-area: parte4Listas3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte5Btn3 {
-          grid-area: parte5Btn3; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
-      grid-area: gatoEnAdopcion4; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4" "parte2Imagen4 parte3Descripcion4" "parte4Listas4 parte4Listas4" "parte5Btn4 parte5Btn4"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
-          grid-area: parte1Nombre4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 {
-          grid-area: parte2Imagen4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte3Descripcion4 {
-          grid-area: parte3Descripcion4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte4Listas4 {
-          grid-area: parte4Listas4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
-          grid-area: parte5Btn4; }
-    .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
-      display: flex; }
-    .Gatos3Grid .parrafo {
-      font-size: 18px;
-      margin: auto; }
-    .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; }
-    .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
-      display: block;
-      margin: 0px auto 25px; } }
+    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas";
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
+    grid-area: gatoEnAdopcion1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1" "parte2Imagen1 parte3Descripcion1" "parte4Lista1 parte4Lista1" "parte5Btn1 parte5Btn1";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte1Nombre1 {
+    grid-area: parte1Nombre1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte2Imagen1 {
+    grid-area: parte2Imagen1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte3Descripcion1 {
+    grid-area: parte3Descripcion1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte4Lista1 {
+    grid-area: parte4Lista1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gato3Grid__parte5Btn1 {
+    grid-area: parte5Btn1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
+    grid-area: gatoEnAdopcion2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2" "parte2Imagen2 parte3Descripcion2" "parte4Listas2 parte4Listas2" "parte5Btn2 parte5Btn2";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte1Nombre2 {
+    grid-area: parte1Nombre2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte2Imagen2 {
+    grid-area: parte2Imagen2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte3Descripcion2 {
+    grid-area: parte3Descripcion2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte4Listas2 {
+    grid-area: parte4Listas2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte5Btn2 {
+    grid-area: parte5Btn2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
+    grid-area: gatoEnAdopcion3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3" "parte2Imagen3 parte3Descripcion3" "parte4Listas3 parte4Listas3" "parte5Btn3 parte5Btn3";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte1Nombre3 {
+    grid-area: parte1Nombre3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte2Imagen3 {
+    grid-area: parte2Imagen3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte3Descripcion3 {
+    grid-area: parte3Descripcion3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte4Listas3 {
+    grid-area: parte4Listas3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte5Btn3 {
+    grid-area: parte5Btn3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
+    grid-area: gatoEnAdopcion4;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4" "parte2Imagen4 parte3Descripcion4" "parte4Listas4 parte4Listas4" "parte5Btn4 parte5Btn4";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte1Nombre4 {
+    grid-area: parte1Nombre4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte2Imagen4 {
+    grid-area: parte2Imagen4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte3Descripcion4 {
+    grid-area: parte3Descripcion4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte4Listas4 {
+    grid-area: parte4Listas4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte5Btn4 {
+    grid-area: parte5Btn4;
+  }
+  .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
+    display: flex;
+  }
+  .Gatos3Grid .parrafo {
+    font-size: 18px;
+    margin: auto;
+  }
+  .Gatos3Grid .Gatos3Grid__botonDeVerMas {
+    grid-area: botonDeVerMas;
+  }
+  .Gatos3Grid .btnvermasEstilos--margenesGatos3 {
+    display: block;
+    margin: 0px auto 25px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .Gatos3Grid {
@@ -571,81 +914,172 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
-    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas"; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
-      grid-area: gatoEnAdopcion1; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre1 parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte5Btn1 parte5Btn1 parte5Btn1"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
-          grid-area: parte1Nombre1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 {
-          grid-area: parte2Imagen1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte3Descripcion1 {
-          grid-area: parte3Descripcion1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte4Lista1 {
-          grid-area: parte4Lista1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gato3Grid__parte5Btn1 {
-          grid-area: parte5Btn1; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
-      grid-area: gatoEnAdopcion2; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre2 parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte5Btn2 parte5Btn2 parte5Btn2"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
-          grid-area: parte1Nombre2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 {
-          grid-area: parte2Imagen2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte3Descripcion2 {
-          grid-area: parte3Descripcion2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte4Listas2 {
-          grid-area: parte4Listas2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte5Btn2 {
-          grid-area: parte5Btn2; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
-      grid-area: gatoEnAdopcion3; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre3 parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte5Btn3 parte5Btn3 parte5Btn3"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
-          grid-area: parte1Nombre3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 {
-          grid-area: parte2Imagen3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte3Descripcion3 {
-          grid-area: parte3Descripcion3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte4Listas3 {
-          grid-area: parte4Listas3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte5Btn3 {
-          grid-area: parte5Btn3; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
-      grid-area: gatoEnAdopcion4; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre4 parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte5Btn4 parte5Btn4 parte5Btn4"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
-          grid-area: parte1Nombre4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 {
-          grid-area: parte2Imagen4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte3Descripcion4 {
-          grid-area: parte3Descripcion4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte4Listas4 {
-          grid-area: parte4Listas4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
-          grid-area: parte5Btn4; }
-    .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas; } }
+    grid-template-areas: "gatoEnAdopcion1" "gatoEnAdopcion2" "gatoEnAdopcion3" "gatoEnAdopcion4" "botonDeVerMas";
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
+    grid-area: gatoEnAdopcion1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre1 parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte2Imagen1 parte3Descripcion1 parte4Lista1" "parte5Btn1 parte5Btn1 parte5Btn1";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte1Nombre1 {
+    grid-area: parte1Nombre1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte2Imagen1 {
+    grid-area: parte2Imagen1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte3Descripcion1 {
+    grid-area: parte3Descripcion1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte4Lista1 {
+    grid-area: parte4Lista1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gato3Grid__parte5Btn1 {
+    grid-area: parte5Btn1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
+    grid-area: gatoEnAdopcion2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre2 parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte2Imagen2 parte3Descripcion2 parte4Listas2" "parte5Btn2 parte5Btn2 parte5Btn2";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte1Nombre2 {
+    grid-area: parte1Nombre2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte2Imagen2 {
+    grid-area: parte2Imagen2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte3Descripcion2 {
+    grid-area: parte3Descripcion2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte4Listas2 {
+    grid-area: parte4Listas2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte5Btn2 {
+    grid-area: parte5Btn2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
+    grid-area: gatoEnAdopcion3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre3 parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte2Imagen3 parte3Descripcion3 parte4Listas3" "parte5Btn3 parte5Btn3 parte5Btn3";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte1Nombre3 {
+    grid-area: parte1Nombre3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte2Imagen3 {
+    grid-area: parte2Imagen3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte3Descripcion3 {
+    grid-area: parte3Descripcion3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte4Listas3 {
+    grid-area: parte4Listas3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte5Btn3 {
+    grid-area: parte5Btn3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
+    grid-area: gatoEnAdopcion4;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre4 parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte2Imagen4 parte3Descripcion4 parte4Listas4" "parte5Btn4 parte5Btn4 parte5Btn4";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte1Nombre4 {
+    grid-area: parte1Nombre4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte2Imagen4 {
+    grid-area: parte2Imagen4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte3Descripcion4 {
+    grid-area: parte3Descripcion4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte4Listas4 {
+    grid-area: parte4Listas4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte5Btn4 {
+    grid-area: parte5Btn4;
+  }
+  .Gatos3Grid .Gatos3Grid__botonDeVerMas {
+    grid-area: botonDeVerMas;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .Gatos3Grid {
@@ -656,109 +1090,208 @@ body {
     height: fit-content;
     overflow-y: hidden;
     overflow-x: hidden;
-    grid-template-areas: "gatoEnAdopcion1 gatoEnAdopcion2" "gatoEnAdopcion3 gatoEnAdopcion4" "botonDeVerMas botonDeVerMas"; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
-      grid-area: gatoEnAdopcion1; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1" "parte2Imagen1 parte3Descripcion1" "parte4Lista1 parte4Lista1" "parte5Btn1 parte5Btn1"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte1Nombre1 {
-          grid-area: parte1Nombre1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte2Imagen1 {
-          grid-area: parte2Imagen1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte3Descripcion1 {
-          grid-area: parte3Descripcion1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gatos3Grid__parte4Lista1 {
-          grid-area: parte4Lista1; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 .Gato3Grid__parte5Btn1 {
-          grid-area: parte5Btn1; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
-      grid-area: gatoEnAdopcion2; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2" "parte2Imagen2 parte3Descripcion2" "parte4Listas2 parte4Listas2" "parte5Btn2 parte5Btn2"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte1Nombre2 {
-          grid-area: parte1Nombre2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte2Imagen2 {
-          grid-area: parte2Imagen2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte3Descripcion2 {
-          grid-area: parte3Descripcion2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte4Listas2 {
-          grid-area: parte4Listas2; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 .Gatos3Grid__parte5Btn2 {
-          grid-area: parte5Btn2; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
-      grid-area: gatoEnAdopcion3; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3" "parte2Imagen3 parte3Descripcion3" "parte4Listas3 parte4Listas3" "parte5Btn3 parte5Btn3"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte1Nombre3 {
-          grid-area: parte1Nombre3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte2Imagen3 {
-          grid-area: parte2Imagen3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte3Descripcion3 {
-          grid-area: parte3Descripcion3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte4Listas3 {
-          grid-area: parte4Listas3; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 .Gatos3Grid__parte5Btn3 {
-          grid-area: parte5Btn3; }
-    .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
-      grid-area: gatoEnAdopcion4; }
-      .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4" "parte2Imagen4 parte3Descripcion4" "parte4Listas4 parte4Listas4" "parte5Btn4 parte5Btn4"; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte1Nombre4 {
-          grid-area: parte1Nombre4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte2Imagen4 {
-          grid-area: parte2Imagen4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte3Descripcion4 {
-          grid-area: parte3Descripcion4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte4Listas4 {
-          grid-area: parte4Listas4; }
-        .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 .Gatos3Grid__parte5Btn4 {
-          grid-area: parte5Btn4; }
-    .Gatos3Grid .Gatos3Grid__botonDeVerMas {
-      grid-area: botonDeVerMas;
-      margin-bottom: 10px; } }
+    grid-template-areas: "gatoEnAdopcion1 gatoEnAdopcion2" "gatoEnAdopcion3 gatoEnAdopcion4" "botonDeVerMas botonDeVerMas";
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 {
+    grid-area: gatoEnAdopcion1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion1 .Gatos3Grid__padreDescripcion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre1 parte1Nombre1" "parte2Imagen1 parte3Descripcion1" "parte2Imagen1 parte3Descripcion1" "parte4Lista1 parte4Lista1" "parte5Btn1 parte5Btn1";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte1Nombre1 {
+    grid-area: parte1Nombre1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte2Imagen1 {
+    grid-area: parte2Imagen1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte3Descripcion1 {
+    grid-area: parte3Descripcion1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gatos3Grid__parte4Lista1 {
+    grid-area: parte4Lista1;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion1
+    .Gatos3Grid__padreDescripcion1
+    .Gato3Grid__parte5Btn1 {
+    grid-area: parte5Btn1;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 {
+    grid-area: gatoEnAdopcion2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion2 .Gatos3Grid__padreDescripcion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre2 parte1Nombre2" "parte2Imagen2 parte3Descripcion2" "parte2Imagen2 parte3Descripcion2" "parte4Listas2 parte4Listas2" "parte5Btn2 parte5Btn2";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte1Nombre2 {
+    grid-area: parte1Nombre2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte2Imagen2 {
+    grid-area: parte2Imagen2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte3Descripcion2 {
+    grid-area: parte3Descripcion2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte4Listas2 {
+    grid-area: parte4Listas2;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion2
+    .Gatos3Grid__padreDescripcion2
+    .Gatos3Grid__parte5Btn2 {
+    grid-area: parte5Btn2;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 {
+    grid-area: gatoEnAdopcion3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion3 .Gatos3Grid__padreDescripcion3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre3 parte1Nombre3" "parte2Imagen3 parte3Descripcion3" "parte2Imagen3 parte3Descripcion3" "parte4Listas3 parte4Listas3" "parte5Btn3 parte5Btn3";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte1Nombre3 {
+    grid-area: parte1Nombre3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte2Imagen3 {
+    grid-area: parte2Imagen3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte3Descripcion3 {
+    grid-area: parte3Descripcion3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte4Listas3 {
+    grid-area: parte4Listas3;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion3
+    .Gatos3Grid__padreDescripcion3
+    .Gatos3Grid__parte5Btn3 {
+    grid-area: parte5Btn3;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 {
+    grid-area: gatoEnAdopcion4;
+  }
+  .Gatos3Grid .Gatos3Grid__gatoEnAdopcion4 .Gatos3Grid__padreDescripcion4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "parte1Nombre4 parte1Nombre4" "parte2Imagen4 parte3Descripcion4" "parte2Imagen4 parte3Descripcion4" "parte4Listas4 parte4Listas4" "parte5Btn4 parte5Btn4";
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte1Nombre4 {
+    grid-area: parte1Nombre4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte2Imagen4 {
+    grid-area: parte2Imagen4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte3Descripcion4 {
+    grid-area: parte3Descripcion4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte4Listas4 {
+    grid-area: parte4Listas4;
+  }
+  .Gatos3Grid
+    .Gatos3Grid__gatoEnAdopcion4
+    .Gatos3Grid__padreDescripcion4
+    .Gatos3Grid__parte5Btn4 {
+    grid-area: parte5Btn4;
+  }
+  .Gatos3Grid .Gatos3Grid__botonDeVerMas {
+    grid-area: botonDeVerMas;
+    margin-bottom: 10px;
+  }
+}
 
 .Gatos3Grid .paddingDe5px {
-  padding: 5px 5px; }
+  padding: 5px 5px;
+}
 
 .Gatos3Grid .textAlingCenter {
-  text-align: center; }
+  text-align: center;
+}
 
 .Gatos3Grid .fondoMascelesteClaro {
   background-color: #00b4d8;
-  border-radius: 20px 20px 0px 0px; }
+  border-radius: 20px 20px 0px 0px;
+}
 
 .Gatos3Grid .fondoCelesteMasClaroAun {
-  background-color: #81c6d4; }
+  background-color: #81c6d4;
+}
 
 .Gatos3Grid .gatos3BordesRedondos {
-  border-radius: 0px 0px 20px 20px; }
+  border-radius: 0px 0px 20px 20px;
+}
 
 .Gatos3Grid .Gatos3Grid__parrafoDescriptivo {
   margin: 5px 2px;
-  font-size: 17px; }
+  font-size: 17px;
+}
 
 .Gatos3Grid .gatosContenedorTexto {
-  display: flex; }
+  display: flex;
+}
 
 .Gatos3Grid .btnAdoptar--margenesGatos3 {
   display: block;
-  margin: 10px auto; }
+  margin: 10px auto;
+}
 
 /*clases excluisvas de Gatos3.html*/
 /*clases excluisvas de especiales.html*/
@@ -770,90 +1303,161 @@ body {
     row-gap: 55px;
     margin-bottom: 40px;
     background-color: #fff;
-    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
-    .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
-      grid-area: introduccionEspeciales;
-      background-color: #72a5c6; }
-    .padreDeSecciones .padreDeSecciones__seccion1Especiales {
-      grid-area: seccion1Especiales;
-      background-color: #72a5c6;
-      border-radius: 20px; }
-      .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-        grid-template-areas: "DescripcionEspeciales1" "ImagenEspeciales1"; }
-        .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__DescripcionEspeciales1 {
-          grid-area: DescripcionEspeciales1; }
-        .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 {
-          grid-area: ImagenEspeciales1;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 .padreDeSecciones__imgGatoInmuno {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 20px; }
-    .padreDeSecciones .padreDeSecciones__seccion2Especiales {
-      grid-area: seccion2Especiales;
-      background-color: #7fbce4;
-      border-radius: 20px; }
-      .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales {
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "DescripcionEspeciales2" "ImagenEspeciales2"; }
-        .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__DescripcionEspeciales2 {
-          grid-area: DescripcionEspeciales2; }
-        .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 {
-          grid-area: ImagenEspeciales2;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 .padreDeSecciones__imgRagdollEspeciales {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 20px; }
-    .padreDeSecciones .padreDeSecciones__seccion3Especiales {
-      grid-area: seccion3Especiales;
-      background-color: #7fbce4;
-      border-radius: 20px; }
-      .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales {
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "DescripcionEspeciales3" "ImagenEspeciales3"; }
-        .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__DescripcionEspeciales3 {
-          grid-area: DescripcionEspeciales3; }
-        .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 {
-          grid-area: ImagenEspeciales3;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 .padreDeSecciones__gatoCiego {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 20px; }
-    .padreDeSecciones .padreDeSecciones__seccion4Especiales {
-      grid-area: seccion4Especiales; }
-      .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales {
-        display: grid;
-        row-gap: 10px;
-        border-radius: 20px;
-        grid-template-columns: 1fr;
-        background-color: #7fbce4;
-        grid-template-areas: "DescripcionEspeciales4" "ImagenEspeciales4"; }
-        .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__DescripcionEspeciales4 {
-          grid-area: DescripcionEspeciales4; }
-        .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 {
-          grid-area: ImagenEspeciales4;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 .padreDeSecciones__imgGatoEpileptico {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 20px; } }
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
+  }
+  .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
+    grid-area: introduccionEspeciales;
+    background-color: #72a5c6;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion1Especiales {
+    grid-area: seccion1Especiales;
+    background-color: #72a5c6;
+    border-radius: 20px;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    grid-template-areas: "DescripcionEspeciales1" "ImagenEspeciales1";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__DescripcionEspeciales1 {
+    grid-area: DescripcionEspeciales1;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__ImagenEspeciales1 {
+    grid-area: ImagenEspeciales1;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__ImagenEspeciales1
+    .padreDeSecciones__imgGatoInmuno {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion2Especiales {
+    grid-area: seccion2Especiales;
+    background-color: #7fbce4;
+    border-radius: 20px;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "DescripcionEspeciales2" "ImagenEspeciales2";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__DescripcionEspeciales2 {
+    grid-area: DescripcionEspeciales2;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__ImagenEspeciales2 {
+    grid-area: ImagenEspeciales2;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__ImagenEspeciales2
+    .padreDeSecciones__imgRagdollEspeciales {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion3Especiales {
+    grid-area: seccion3Especiales;
+    background-color: #7fbce4;
+    border-radius: 20px;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "DescripcionEspeciales3" "ImagenEspeciales3";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__DescripcionEspeciales3 {
+    grid-area: DescripcionEspeciales3;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__ImagenEspeciales3 {
+    grid-area: ImagenEspeciales3;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__ImagenEspeciales3
+    .padreDeSecciones__gatoCiego {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion4Especiales {
+    grid-area: seccion4Especiales;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales {
+    display: grid;
+    row-gap: 10px;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    background-color: #7fbce4;
+    grid-template-areas: "DescripcionEspeciales4" "ImagenEspeciales4";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__DescripcionEspeciales4 {
+    grid-area: DescripcionEspeciales4;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__ImagenEspeciales4 {
+    grid-area: ImagenEspeciales4;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__ImagenEspeciales4
+    .padreDeSecciones__imgGatoEpileptico {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .padreDeSecciones {
@@ -861,101 +1465,172 @@ body {
     grid-template-columns: 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales"; }
-    .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
-      grid-area: introduccionEspeciales; }
-    .padreDeSecciones .padreDeSecciones__seccion1Especiales {
-      grid-area: seccion1Especiales; }
-      .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 10px;
-        grid-template-areas: "DescripcionEspeciales1 ImagenEspeciales1" "DescripcionEspeciales1 ImagenEspeciales1"; }
-        .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__DescripcionEspeciales1 {
-          grid-area: DescripcionEspeciales1;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between; }
-        .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 {
-          grid-area: ImagenEspeciales1; }
-          .padreDeSecciones .padreDeSecciones__seccion1Especiales .padreDeSecciones__padreDEseccion1Especiales .padreDeSecciones__ImagenEspeciales1 .padreDeSecciones__imgGatoInmuno {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 0 20px 20px 0; }
-    .padreDeSecciones .padreDeSecciones__seccion2Especiales {
-      grid-area: seccion2Especiales; }
-      .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales {
-        display: grid;
-        row-gap: 10px;
-        border-radius: 20px;
-        grid-template-columns: 1fr 1fr;
-        background-color: #7fbce4;
-        grid-template-areas: "DescripcionEspeciales2 ImagenEspeciales2" " DescripcionEspeciales2 ImagenEspeciales2"; }
-        .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__DescripcionEspeciales2 {
-          grid-area: DescripcionEspeciales2;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between; }
-        .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 {
-          grid-area: ImagenEspeciales2;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion2Especiales .padreDeSecciones__padreDEseccion2Especiales .padreDeSecciones__ImagenEspeciales2 .padreDeSecciones__imgRagdollEspeciales {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 0 20px 20px 0; }
-    .padreDeSecciones .padreDeSecciones__seccion3Especiales {
-      grid-area: seccion3Especiales; }
-      .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales {
-        display: grid;
-        row-gap: 10px;
-        border-radius: 20px;
-        grid-template-columns: 1fr 1fr;
-        background-color: #7fbce4;
-        grid-template-areas: "DescripcionEspeciales3 ImagenEspeciales3" "DescripcionEspeciales3 ImagenEspeciales3"; }
-        .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__DescripcionEspeciales3 {
-          grid-area: DescripcionEspeciales3;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between; }
-        .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 {
-          grid-area: ImagenEspeciales3;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion3Especiales .padreDeSecciones__padreDEseccion3Especiales .padreDeSecciones__ImagenEspeciales3 .padreDeSecciones__gatoCiego {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 0 20px 20px 0; }
-    .padreDeSecciones .padreDeSecciones__seccion4Especiales {
-      grid-area: seccion4Especiales; }
-      .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales {
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        background-color: #72a5c6;
-        grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4"; }
-        .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__DescripcionEspeciales4 {
-          grid-area: DescripcionEspeciales4;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between; }
-        .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 {
-          grid-area: ImagenEspeciales4;
-          display: flex; }
-          .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__ImagenEspeciales4 .padreDeSecciones__imgGatoEpileptico {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            border-radius: 0 20px 20px 0; } }
+    grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
+  }
+  .padreDeSecciones .padreDeSecciones__introduccionEspeciales {
+    grid-area: introduccionEspeciales;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion1Especiales {
+    grid-area: seccion1Especiales;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    grid-template-areas: "DescripcionEspeciales1 ImagenEspeciales1" "DescripcionEspeciales1 ImagenEspeciales1";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__DescripcionEspeciales1 {
+    grid-area: DescripcionEspeciales1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__ImagenEspeciales1 {
+    grid-area: ImagenEspeciales1;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion1Especiales
+    .padreDeSecciones__padreDEseccion1Especiales
+    .padreDeSecciones__ImagenEspeciales1
+    .padreDeSecciones__imgGatoInmuno {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0 20px 20px 0;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion2Especiales {
+    grid-area: seccion2Especiales;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales {
+    display: grid;
+    row-gap: 10px;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #7fbce4;
+    grid-template-areas: "DescripcionEspeciales2 ImagenEspeciales2" " DescripcionEspeciales2 ImagenEspeciales2";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__DescripcionEspeciales2 {
+    grid-area: DescripcionEspeciales2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__ImagenEspeciales2 {
+    grid-area: ImagenEspeciales2;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion2Especiales
+    .padreDeSecciones__padreDEseccion2Especiales
+    .padreDeSecciones__ImagenEspeciales2
+    .padreDeSecciones__imgRagdollEspeciales {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0 20px 20px 0;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion3Especiales {
+    grid-area: seccion3Especiales;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales {
+    display: grid;
+    row-gap: 10px;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #7fbce4;
+    grid-template-areas: "DescripcionEspeciales3 ImagenEspeciales3" "DescripcionEspeciales3 ImagenEspeciales3";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__DescripcionEspeciales3 {
+    grid-area: DescripcionEspeciales3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__ImagenEspeciales3 {
+    grid-area: ImagenEspeciales3;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion3Especiales
+    .padreDeSecciones__padreDEseccion3Especiales
+    .padreDeSecciones__ImagenEspeciales3
+    .padreDeSecciones__gatoCiego {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0 20px 20px 0;
+  }
+  .padreDeSecciones .padreDeSecciones__seccion4Especiales {
+    grid-area: seccion4Especiales;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #72a5c6;
+    grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4";
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__DescripcionEspeciales4 {
+    grid-area: DescripcionEspeciales4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__ImagenEspeciales4 {
+    grid-area: ImagenEspeciales4;
+    display: flex;
+  }
+  .padreDeSecciones
+    .padreDeSecciones__seccion4Especiales
+    .padreDeSecciones__padreDEseccion4Especiales
+    .padreDeSecciones__ImagenEspeciales4
+    .padreDeSecciones__imgGatoEpileptico {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0 20px 20px 0;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .padreDeSecciones {
@@ -963,45 +1638,55 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 40px;
-    grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales"; } }
+    grid-template-areas: "introduccionEspeciales introduccionEspeciales" "seccion1Especiales seccion2Especiales" "seccion3Especiales seccion4Especiales";
+  }
+}
 
 .padreDeSecciones .padreDeSecciones__TamañoDeLetraEnTitulo {
   font-size: 25px;
   margin: 8px 15px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 .padreDeSecciones .padreDeSecciones__TamañoDeLetraEnParrafo {
   font-size: 15px;
   margin: 8px 26px;
   line-height: 18px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 .padreDeSecciones .padreDeSecciones__cardsEspeciales {
   transition: transform 0.5s;
   margin: 0px 15px 0px 15px;
   -webkit-box-shadow: 5px 1px 18px -2px #7fbce4;
   box-shadow: 5px 1px 18px -2px #7fbce4;
-  border-radius: 20px; }
+  border-radius: 20px;
+}
 
 .padreDeSecciones .padreDeSecciones__cardsEspeciales:hover {
-  transform: scale(1.03); }
+  transform: scale(1.03);
+}
 
 .padreDeSecciones .padreDeSecciones__clasesEnTitulos {
   margin: 9px 9px;
   font-size: 26px;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .padreDeSecciones .padreDeSecciones__clasesEnParrafos {
   margin: 9px 9px;
-  font-size: 17px; }
+  font-size: 17px;
+}
 
 .padreDeSecciones .btnAdoptar--margenesEspeciales {
   display: block;
-  margin: 10px auto; }
+  margin: 10px auto;
+}
 
 .padreDeSecciones .btnvermasEstilos--margenesEspeciales {
   display: block;
-  margin: 0px auto 35px; }
+  margin: 0px auto 35px;
+}
 
 @media only screen and (min-width: 320px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
@@ -1009,73 +1694,107 @@ body {
     transition: transform 0.5s;
     -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  }
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems:hover {
-    transform: scale(1.05); }
+    transform: scale(1.05);
+  }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
     width: 200px;
     transition: transform 0.5s;
     -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems:hover {
-    transform: scale(1.05); } }
+    transform: scale(1.05);
+  }
+}
 
 @media only screen and (min-width: 480px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
-    width: 300px; }
+    width: 300px;
+  }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
-    width: 300px; } }
+    width: 300px;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
-    width: 280px; }
+    width: 280px;
+  }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
-    width: 280px; }
+    width: 280px;
+  }
   .contenedorNosotros .contenedorNosotros__iconos1Padre {
     display: flex;
     flex-flow: row wrap;
     column-gap: 9em;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; }
+    margin: 0px 30px;
+  }
+  .contenedorNosotros
+    .contenedorNosotros__iconos1Padre
+    .contenedorNosotros__iconos1PadreIconMichiHouse {
+    width: 60px;
+    height: 60px;
+  }
   .contenedorNosotros .contenedorNosotros__iconos2Padre {
     display: flex;
     flex-flow: row wrap;
     column-gap: 9em;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; } }
+    margin: 0px 30px;
+  }
+  .contenedorNosotros
+    .contenedorNosotros__iconos2Padre
+    .contenedorNosotros__iconos2PadreIconMichiHouse {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
-    width: 300px; }
+    width: 300px;
+  }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
-    width: 300px; }
+    width: 300px;
+  }
   .contenedorNosotros .contenedorNosotros__iconos1Padre {
     display: flex;
     flex-flow: column wrap;
     row-gap: 40px;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__iconos1Padre .contenedorNosotros__iconos1PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; }
+    margin: 0px 30px;
+  }
+  .contenedorNosotros
+    .contenedorNosotros__iconos1Padre
+    .contenedorNosotros__iconos1PadreIconMichiHouse {
+    width: 60px;
+    height: 60px;
+  }
   .contenedorNosotros .contenedorNosotros__iconos2Padre {
     display: flex;
     flex-flow: column wrap;
     row-gap: 40px;
-    margin: 0px 30px; }
-    .contenedorNosotros .contenedorNosotros__iconos2Padre .contenedorNosotros__iconos2PadreIconMichiHouse {
-      width: 60px;
-      height: 60px; } }
+    margin: 0px 30px;
+  }
+  .contenedorNosotros
+    .contenedorNosotros__iconos2Padre
+    .contenedorNosotros__iconos2PadreIconMichiHouse {
+    width: 60px;
+    height: 60px;
+  }
+}
 
-.contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__subtitulo {
-  padding: 10px 15px 0px 15px; }
+.contenedorNosotros
+  .contenedorNosotros__seccion8
+  .contenedorNosotros__subtitulo {
+  padding: 10px 15px 0px 15px;
+}
 
 .contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__titulo {
-  padding: 0px 0px 5px 10px; }
+  padding: 0px 0px 5px 10px;
+}
 
 .contenedorNosotros .contenedorNosotros__seccion9Padre {
   display: flex;
@@ -1084,7 +1803,8 @@ body {
   align-items: flex-end;
   row-gap: 15px;
   column-gap: 30px;
-  padding: 10px 0px; }
+  padding: 10px 0px;
+}
 
 .contenedorNosotros .contenedorNosotros__seccion10Padre {
   display: flex;
@@ -1093,7 +1813,8 @@ body {
   align-items: flex-start;
   padding: 10px 0px;
   column-gap: 30px;
-  row-gap: 15px; }
+  row-gap: 15px;
+}
 
 .contenedorNosotros .contenedorNosotros__seccion11 {
   display: flex;
@@ -1101,11 +1822,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 35px 0px;
-  row-gap: 15px; }
-  .contenedorNosotros .contenedorNosotros__seccion11 .contenedorNosotros__parrafo {
-    flex-basis: 800px;
-    font-size: 20px;
-    margin: 0px 10px 0px; }
+  row-gap: 15px;
+}
+.contenedorNosotros
+  .contenedorNosotros__seccion11
+  .contenedorNosotros__parrafo {
+  flex-basis: 800px;
+  font-size: 20px;
+  margin: 0px 10px 0px;
+}
 
 /*clases excluisvas de nosotros.html*/
 /*clases excluisvas de formulario.html y recibido.html*/
@@ -1115,56 +1840,71 @@ body {
   justify-content: center;
   align-items: center;
   padding: 60px 0px;
-  row-gap: 10px; }
-  .seccion10 .seccion10__articulo1 {
-    background-color: #72a5c6;
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    justify-content: flex-start;
-    align-items: center;
-    height: 560px;
-    width: 550px;
-    padding: 25px;
+  row-gap: 10px;
+}
+.seccion10 .seccion10__articulo1 {
+  background-color: #72a5c6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 560px;
+  width: 550px;
+  padding: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+}
+.seccion10 .seccion10__articulo1 .seccion10__titulo {
+  text-align: center;
+  font-size: 28px;
+}
+.seccion10 .seccion10__articulo1 .articulo1__notificacion {
+  font-style: italic;
+}
+@media only screen and (min-width: 320px) {
+  .seccion10 .seccion10__articulo2 {
+    background-color: #c8e3e4;
+    padding: 5px 25px;
     border-radius: 10px;
+    width: 550px;
+    height: 560px;
     -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
-    .seccion10 .seccion10__articulo1 .seccion10__titulo {
-      text-align: center;
-      font-size: 28px; }
-    .seccion10 .seccion10__articulo1 .articulo1__notificacion {
-      font-style: italic; }
-  @media only screen and (min-width: 320px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 5px 25px;
-      border-radius: 10px;
-      width: 550px;
-      height: 560px;
-      -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-      -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-      box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); } }
-  @media only screen and (min-width: 480px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-  @media only screen and (min-width: 600px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-  @media only screen and (min-width: 768px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-  @media only screen and (min-width: 1024px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  }
+}
+@media only screen and (min-width: 480px) {
+  .seccion10 .seccion10__articulo2 {
+    background-color: #c8e3e4;
+    padding: 10px 25px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .seccion10 .seccion10__articulo2 {
+    background-color: #c8e3e4;
+    padding: 10px 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .seccion10 .seccion10__articulo2 {
+    background-color: #c8e3e4;
+    padding: 10px 25px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .seccion10 .seccion10__articulo2 {
+    background-color: #c8e3e4;
+    padding: 10px 25px;
+  }
+}
 
 /*propiedades que definen el extend*/
 .seccion10 .seccion10__articulo1 .seccion10__parrafo {
-  color: black; }
+  color: black;
+}
 
 /*clases excluisvas de 404.html*/
 .errorMain {
@@ -1172,11 +1912,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 56px); }
+  height: calc(100vh - 56px);
+}
 
 .error_img {
-  width: 300px; }
+  width: 300px;
+}
 
 .error_link {
-  color: #1D3557;
-  text-decoration: none; }
+  color: #1d3557;
+  text-decoration: none;
+}
