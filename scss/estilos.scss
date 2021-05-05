@@ -23,6 +23,11 @@ $color-fondo: #7fbce4;
   background-color: #1d3557;
 }
 
+.barraDeNavegacion_logo{
+  padding: 0px 5px 0px 0px;
+  max-width: 40px;
+}
+
 /*body*/
 
 body {
@@ -298,8 +303,7 @@ body {
     .footer__padreLogoYNombre {
       padding: 25px 4px;
       .footer__hijologo {
-        width: 35px;
-        height: 35px;
+        width: 40px;
         margin: -11px 0px 0px 0px;
       }
       .footer__enlace {
