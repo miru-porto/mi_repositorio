@@ -1,6 +1,6 @@
 # Bienvenido/a a mi Proyecto Final!
 
-Hola! Soy **Miranda Portocarrero** de la camada 14265 de Desarrollo Web y, a continuación, le ofrezco una breve descripción de cómo es que se organiza mi código tanto dentro como fuera.
+Hola! Soy **Miranda Portocarrero** de la camada 14264 de Desarrollo Web y, a continuación, le ofrezco una breve descripción de cómo es que se organiza mi código tanto dentro como fuera.
 
 ## Temática
 La temática de mi proyecto es la adopción de gatos. Más específicamente, me encargo de la organización de información, en este caso de gatos en adopción, para intentar conseguirles un hogar. Me ocupo de ordenar los datos que tengo a mi disposición para facilitarles el acceso a los usuarios que estén interesados en adoptar una mascota.
