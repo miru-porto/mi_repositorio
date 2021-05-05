@@ -9,7 +9,7 @@ La temática de mi proyecto es la adopción de gatos. Más específicamente, me 
 El trabajo cuenta con **6 secciones y una subseccion**, las cuales siguen el siguiente orden: "index.html", "Gatos3.html", "especiales.hmtl", "nosotros.html", "formulario.html" (y una subseccion llamada "recibido.html"); y, por último, "404.html". 
 
 ## Estructura SASS
-Con respecto a la carpeta scss, esta posee **5 archivos** de los cuales 4 están importados hacia "estilos.scss". A partir de allí y, gracias al uso de node.js, dichos archivos sass se compilan en la carpeta css, en un archivo llamado **"estilos.css"**.
+Con respecto a la carpeta scss, esta posee **6 archivos** de los cuales 5 están importados hacia **"estilos.scss"**. A partir de allí y, gracias al uso de node.js, dichos archivos sass se compilan en la carpeta css, en un archivo llamado **"estilos.css"**.
 
 Se añaden **comentarios** al principio de las hojas de estilo scss para dar a entender que las clases a continuación son **propias y exclusivas** de sus respectivos html a los cuales hacen referencian. 
 
@@ -22,4 +22,8 @@ La carpeta **"images"** agrupa a todas las imágenes utilizadas en este proyecto
 Se incluye una página 404 para avisar al usuario que no se encontró la página que busca.
 
 ## Subida a Github
-Por último, se incluye un archivo **".gitignore"** que permite que "node_modules" no sea subido al servicio de hosting, que, en este caso, es **Github**.
+Como se ve en el repositorio, se incluye un archivo **".gitignore"** que permite que "node_modules" no sea subido al servicio de hosting, que, en este caso, es **Github**.
+
+Y, por último, agregué una **clave SSH** para conectarme con Github desde mi computadora, evitando tener que logiarme y perder tiempo. A continuación, incluyo una foto para que pueda verla.
+
+![Clave SSH](file:///C:/Users/Paulavalopez07/Documents/claveSSH.png)
