@@ -24,6 +24,4 @@ Se incluye una página 404 para avisar al usuario que no se encontró la página
 ## Subida a Github
 Como se ve en el repositorio, se incluye un archivo **".gitignore"** que permite que "node_modules" no sea subido al servicio de hosting, que, en este caso, es **Github**.
 
-Y, por último, agregué una **clave SSH** para conectarme con Github desde mi computadora, evitando tener que logiarme y perder tiempo. A continuación, incluyo una foto para que pueda verla.
-
-[Clave SSH](https://photos.app.goo.gl/Xa8bfunTDNHRZhH57)
+Y, por último, agregué una **clave SSH** para conectarme con Github desde mi computadora, evitando tener que logiarme y perder tiempo.
