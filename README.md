@@ -26,4 +26,4 @@ Como se ve en el repositorio, se incluye un archivo **".gitignore"** que permite
 
 Y, por último, agregué una **clave SSH** para conectarme con Github desde mi computadora, evitando tener que logiarme y perder tiempo. A continuación, incluyo una foto para que pueda verla.
 
-![Clave SSH](https://photos.google.com/photo/AF1QipPS7WYw01KbIHZjlUiYkhQIcK8h69lS3y9ZWile)
+[Clave SSH](https://photos.app.goo.gl/Xa8bfunTDNHRZhH57)
