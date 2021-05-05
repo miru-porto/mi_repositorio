@@ -1067,7 +1067,8 @@ body {
       height: 60px; } }
 
 .contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__subtitulo {
-  padding: 10px 15px 0px 15px; }
+  padding: 10px 15px 0px 15px;
+  color: #6d6d6d; }
 
 .contenedorNosotros .contenedorNosotros__seccion8 .contenedorNosotros__titulo {
   padding: 0px 0px 5px 10px; }

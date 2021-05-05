@@ -4,6 +4,7 @@ $color-fondo: #7fbce4;
 $color-blanco: #fff;
 $color-azure: azure;
 $propiedadTransform: 0.5s;
+$color-gray: #6d6d6d;
 /*Declaración de todos los mixins utilizados a lo largo del código*/
 @mixin color-letra {
   color: $color-azure;
