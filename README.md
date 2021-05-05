@@ -13,7 +13,7 @@ Con respecto a la carpeta scss, esta posee **5 archivos** de los cuales 4 están
 
 Se añaden **comentarios** al principio de las hojas de estilo scss para dar a entender que las clases a continuación son **propias y exclusivas** de sus respectivos html a los cuales hacen referencian. 
 
-Se agregan **"&"** al comienzo de las clases correspondientes a los botones para que, al ser compiladas a css, no se repitan clases innecesarias.
+Se agregan **"&"** al comienzo de algunas clases para que, al ser compiladas a css, no se repitan clases innecesarias.
 
 ## Organización Imágenes
 La carpeta **"images"** agrupa a todas las imágenes utilizadas en este proyecto.
