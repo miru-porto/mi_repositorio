@@ -18,5 +18,8 @@ Se agregan **"&"** al comienzo de las clases correspondientes a los botones para
 ## Organización Imágenes
 La carpeta **"images"** agrupa a todas las imágenes utilizadas en este proyecto.
 
+## Page 404
+Se incluye una página 404 para avisar al usuario que no se encontró la página que busca.
+
 ## Subida a Github
 Por último, se incluye un archivo **".gitignore"** que permite que "node_modules" no sea subido al servicio de hosting, que en este caso es **Github**.

@@ -1,0 +1,15 @@
+/*clases excluisvas de 404.html*/
+.errorMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 56px);
+}
+.error_img {
+  width: 300px;
+}
+.error_link{
+    color: #1D3557;
+    text-decoration: none;
+}
