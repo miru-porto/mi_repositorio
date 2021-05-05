@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*variables*/
+/*Declaración de variables*/
+/*Declaración de todos los mixins utilizados a lo largo del código*/
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,8 @@
 
 /*selector de texto*/
 ::selection {
-  color: white;
-  background: #1d3557; }
+  color: #fff;
+  background-color: #1d3557; }
 
 /*header*/
 .barraDEnavegacion {
@@ -45,13 +46,11 @@ body {
         text-align: center;
         font-style: italic;
         font-weight: 600;
-        margin: 15px 0px 25px;
-        color: black;
-        background-color: transparent; }
+        margin: 15px 0px 25px; }
       .contenedor .contenedor__frase .contenedor_hr {
         height: 4px;
         opacity: 100;
-        background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); }
+        background-image: linear-gradient(to right, #fff, #1d3557, #fff); }
     .contenedor .contenedor__gato1 {
       grid-area: gato1;
       transition: transform 0.5s;
@@ -184,8 +183,6 @@ body {
         margin-bottom: 15px; } }
 
 .contenedor .contenedor__nombreDEgatos1234 {
-  color: black;
-  background-color: transparent;
   font-weight: bold;
   margin: 10px 0px 8px 15px; }
 
@@ -301,6 +298,7 @@ body {
       color: azure;
       margin: 0px 2% 0px 0px; }
 
+/*clases excluisvas de Gatos3.html*/
 .main__titulo {
   text-align: left;
   font-weight: bold;
@@ -318,13 +316,13 @@ body {
   .main_hr {
     height: 1px;
     opacity: 100;
-    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); } }
+    background-image: linear-gradient(to right, #fff, #1d3557, #fff); } }
 
 @media only screen and (min-width: 768px) {
   .main_hr {
     height: 4px !important;
     opacity: 100;
-    background-image: linear-gradient(to right, #e7e2e2, #1d3557, #e7e2e2); } }
+    background-image: linear-gradient(to right, #fff, #1d3557, #fff); } }
 
 @media only screen and (min-width: 320px) {
   .Gatos3Grid {
@@ -763,7 +761,6 @@ body {
   display: block;
   margin: 10px auto; }
 
-/*clases excluisvas de Gatos3.html*/
 /*clases excluisvas de especiales.html*/
 @media only screen and (min-width: 320px) {
   .padreDeSecciones {
@@ -942,7 +939,7 @@ body {
         display: grid;
         row-gap: 10px;
         grid-template-columns: 1fr 1fr;
-        background-color: #72a5c6;
+        background-color: #7fbce4;
         grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4"; }
         .padreDeSecciones .padreDeSecciones__seccion4Especiales .padreDeSecciones__padreDEseccion4Especiales .padreDeSecciones__DescripcionEspeciales4 {
           grid-area: DescripcionEspeciales4;
@@ -1006,6 +1003,7 @@ body {
   display: block;
   margin: 0px auto 35px; }
 
+/*clases excluisvas de nosotros.html*/
 @media only screen and (min-width: 320px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
     width: 200px;
@@ -1013,16 +1011,12 @@ body {
     -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
-  .contenedorNosotros .contenedorNosotros__seccion9PadreItems:hover {
-    transform: scale(1.05); }
   .contenedorNosotros .contenedorNosotros__seccion10PadreItems {
     width: 200px;
     transition: transform 0.5s;
     -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
     -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
-    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); }
-  .contenedorNosotros .contenedorNosotros__seccion10PadreItems:hover {
-    transform: scale(1.05); } }
+    box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); } }
 
 @media only screen and (min-width: 480px) {
   .contenedorNosotros .contenedorNosotros__seccion9PadreItems {
@@ -1110,7 +1104,6 @@ body {
     font-size: 20px;
     margin: 0px 10px 0px; }
 
-/*clases excluisvas de nosotros.html*/
 /*clases excluisvas de formulario.html y recibido.html*/
 .seccion10 {
   display: flex;
@@ -1150,24 +1143,7 @@ body {
       box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26); } }
   @media only screen and (min-width: 480px) {
     .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
       padding: 10px 25px; } }
-  @media only screen and (min-width: 600px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-  @media only screen and (min-width: 768px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-  @media only screen and (min-width: 1024px) {
-    .seccion10 .seccion10__articulo2 {
-      background-color: #c8e3e4;
-      padding: 10px 25px; } }
-
-/*propiedades que definen el extend*/
-.seccion10 .seccion10__articulo1 .seccion10__parrafo {
-  color: black; }
 
 /*clases excluisvas de 404.html*/
 .errorMain {

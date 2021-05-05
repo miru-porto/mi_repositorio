@@ -1,3 +1,5 @@
+/*clases excluisvas de Gatos3.html*/
+
 .main__titulo {
   text-align: left;
   font-weight: bold;
@@ -16,24 +18,14 @@
   .main_hr {
     height: 1px;
     opacity: 100;
-    background-image: linear-gradient(
-      to right,
-      rgb(231, 226, 226),
-      #1d3557,
-      rgb(231, 226, 226)
-    );
+    @include degradado;
   }
 }
 @media only screen and (min-width: 768px) {
   .main_hr {
     height: 4px !important;
     opacity: 100;
-    background-image: linear-gradient(
-      to right,
-      rgb(231, 226, 226),
-      #1d3557,
-      rgb(231, 226, 226)
-    );
+    @include degradado;
   }
 }
 
@@ -41,7 +33,7 @@
   @media only screen and (min-width: 320px) {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #fff;
+    background-color: $color-blanco;
     column-gap: 10px;
     row-gap: 50px;
     height: fit-content;
@@ -60,9 +52,8 @@
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+        @include color-paleta3;
+        @include sombreado-cards;
         .Gatos3Grid__parte1Nombre1 {
           grid-area: parte1Nombre1;
         }
@@ -88,7 +79,7 @@
     }
     .Gatos3Grid__gatoEnAdopcion2 {
       grid-area: gatoEnAdopcion2;
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
       .Gatos3Grid__padreDescripcion2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -98,9 +89,8 @@
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+        @include color-paleta3;
+        @include sombreado-cards;
         .Gatos3Grid__parte1Nombre2 {
           grid-area: parte1Nombre2;
         }
@@ -135,9 +125,8 @@
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+        @include color-paleta3;
+        @include sombreado-cards;
         .Gatos3Grid__parte1Nombre3 {
           grid-area: parte1Nombre3;
         }
@@ -172,9 +161,8 @@
         width: 90%;
         border-radius: 20px;
         margin: auto;
-        background-color: #0077b6;
-        -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-        box-shadow: 5px 1px 18px -2px $color-fondo;
+        @include color-paleta3;
+        @include sombreado-cards;
         .Gatos3Grid__parte1Nombre4 {
           grid-area: parte1Nombre4;
         }
@@ -206,10 +194,10 @@
       margin: 0px auto 35px;
     }
     .cardGatos3 {
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
     }
     .cardGatos3:hover {
-      transform: scale(1.03);
+      @include transform(scale(1.03));
     }
     .gatosContenedorListas {
       display: flex;
@@ -600,5 +588,3 @@
     margin: 10px auto;
   }
 }
-
-/*clases excluisvas de Gatos3.html*/

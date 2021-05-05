@@ -7,15 +7,15 @@
     column-gap: 10px;
     row-gap: 55px;
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color: $color-blanco;
     grid-template-areas: "introduccionEspeciales" "seccion1Especiales" "seccion2Especiales" "seccion3Especiales" "seccion4Especiales";
     .padreDeSecciones__introduccionEspeciales {
       grid-area: introduccionEspeciales;
-      background-color: #72a5c6;
+      @include bgs-used;
     }
     .padreDeSecciones__seccion1Especiales {
       grid-area: seccion1Especiales;
-      background-color: #72a5c6;
+      @include bgs-used;
       border-radius: 20px;
       .padreDeSecciones__padreDEseccion1Especiales {
         display: grid;
@@ -40,7 +40,7 @@
     }
     .padreDeSecciones__seccion2Especiales {
       grid-area: seccion2Especiales;
-      background-color: #7fbce4;
+      background-color: $color-fondo;
       border-radius: 20px;
       .padreDeSecciones__padreDEseccion2Especiales {
         display: grid;
@@ -65,7 +65,7 @@
     }
     .padreDeSecciones__seccion3Especiales {
       grid-area: seccion3Especiales;
-      background-color: #7fbce4;
+      background-color: $color-fondo;
       border-radius: 20px;
       .padreDeSecciones__padreDEseccion3Especiales {
         display: grid;
@@ -95,7 +95,7 @@
         row-gap: 10px;
         border-radius: 20px;
         grid-template-columns: 1fr;
-        background-color: #7fbce4;
+        @include color-paleta2;
         grid-template-areas: "DescripcionEspeciales4" "ImagenEspeciales4";
         .padreDeSecciones__DescripcionEspeciales4 {
           grid-area: DescripcionEspeciales4;
@@ -156,7 +156,7 @@
         row-gap: 10px;
         border-radius: 20px;
         grid-template-columns: 1fr 1fr;
-        background-color: #7fbce4;
+        @include color-paleta2;
         grid-template-areas: "DescripcionEspeciales2 ImagenEspeciales2" " DescripcionEspeciales2 ImagenEspeciales2";
         .padreDeSecciones__DescripcionEspeciales2 {
           grid-area: DescripcionEspeciales2;
@@ -185,7 +185,7 @@
         row-gap: 10px;
         border-radius: 20px;
         grid-template-columns: 1fr 1fr;
-        background-color: #7fbce4;
+        @include color-paleta2;
         grid-template-areas: "DescripcionEspeciales3 ImagenEspeciales3" "DescripcionEspeciales3 ImagenEspeciales3";
         .padreDeSecciones__DescripcionEspeciales3 {
           grid-area: DescripcionEspeciales3;
@@ -213,7 +213,7 @@
         display: grid;
         row-gap: 10px;
         grid-template-columns: 1fr 1fr;
-        background-color: #72a5c6;
+        @include color-paleta2;
         grid-template-areas: "DescripcionEspeciales4 ImagenEspeciales4" "DescripcionEspeciales4 ImagenEspeciales4";
         .padreDeSecciones__DescripcionEspeciales4 {
           grid-area: DescripcionEspeciales4;
@@ -255,14 +255,13 @@
     letter-spacing: 1px;
   }
   .padreDeSecciones__cardsEspeciales {
-    transition: transform 0.5s;
+    transition: transform $propiedadTransform;
     margin: 0px 15px 0px 15px;
-    -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
-    box-shadow: 5px 1px 18px -2px $color-fondo;
+    @include sombreado-cards;
     border-radius: 20px;
   }
   .padreDeSecciones__cardsEspeciales:hover {
-    transform: scale(1.03);
+    @include transform(scale(1.03));
   }
   .padreDeSecciones__clasesEnTitulos {
     margin: 9px 9px;

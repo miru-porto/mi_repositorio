@@ -1,6 +1,53 @@
-/*variables*/
-
+/*Declaración de variables*/
+$color-preferido: #1d3557;
 $color-fondo: #7fbce4;
+$color-blanco: #fff;
+$color-azure: azure;
+$propiedadTransform: 0.5s;
+/*Declaración de todos los mixins utilizados a lo largo del código*/
+@mixin color-letra {
+  color: $color-azure;
+}
+
+@mixin color-paleta {
+  background-color: $color-preferido;
+}
+
+@mixin color-paleta2 {
+  background-color: $color-fondo;
+}
+
+@mixin degradado {
+  background-image: linear-gradient(
+    to right,
+    $color-blanco,
+    $color-preferido,
+    $color-blanco
+  );
+}
+
+@mixin transform($propiedad) {
+  transform: $propiedad;
+}
+
+@mixin color-paleta3 {
+  background-color: #0077b6;
+}
+
+@mixin sombreado-cards {
+  -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
+  box-shadow: 5px 1px 18px -2px $color-fondo;
+}
+
+@mixin sombra-negro {
+  -webkit-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  -moz-box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+  box-shadow: 8px 6px 12px 0px rgba(50, 50, 48, 0.26);
+}
+
+@mixin bgs-used {
+  background-color: #72a5c6;
+}
 
 * {
   margin: 0;
@@ -10,8 +57,8 @@ $color-fondo: #7fbce4;
 
 /*selector de texto*/
 ::selection {
-  color: white;
-  background: #1d3557;
+  color: $color-blanco;
+  @include color-paleta;
 }
 
 /*header*/
@@ -20,10 +67,10 @@ $color-fondo: #7fbce4;
   position: sticky;
   top: 0px;
   z-index: 3;
-  background-color: #1d3557;
+  @include color-paleta;
 }
 
-.barraDeNavegacion_logo{
+.barraDeNavegacion_logo {
   padding: 0px 5px 0px 0px;
   max-width: 40px;
 }
@@ -31,16 +78,12 @@ $color-fondo: #7fbce4;
 /*body*/
 
 body {
-  background-color: #fff;
+  background-color: $color-blanco;
 }
 
 /*clases exclusivas del index.html*/
 
 .contenedor {
-  @mixin estilos($color, $fondo) {
-    color: $color;
-    background-color: $fondo;
-  }
   @media only screen and (min-width: 320px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -61,22 +104,16 @@ body {
         font-style: italic;
         font-weight: 600;
         margin: 15px 0px 25px;
-        @include estilos(black, transparent);
       }
       .contenedor_hr {
         height: 4px;
         opacity: 100;
-        background-image: linear-gradient(
-          to right,
-          rgb(231, 226, 226),
-          #1d3557,
-          rgb(231, 226, 226)
-        );
+        @include degradado;
       }
     }
     .contenedor__gato1 {
       grid-area: gato1;
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -86,16 +123,16 @@ body {
         border-radius: 20px 20px 0 0;
         transition: transform 0.5s;
         &:hover {
-          transform: scale(0.98);
+          @include transform(scale(0.98));
         }
       }
       &:hover {
-        transform: scale(1.05);
+        @include transform(scale(1.05));
       }
     }
     .contenedor__gato2 {
       grid-area: gato2;
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -103,51 +140,51 @@ body {
       .contenedor__imgAzulruso {
         width: 100%;
         border-radius: 20px 20px 0 0;
-        transition: transform 0.5s;
+        transition: transform $propiedadTransform;
         &:hover {
-          transform: scale(0.98);
+          @include transform(scale(0.98));
         }
       }
       &:hover {
-        transform: scale(1.05);
+        @include transform(scale(1.05));
       }
     }
     .contenedor__gato3 {
       grid-area: gato3;
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: space-between;
       .contenedor__imgGatoBombay {
-        transition: transform 0.5s;
+        transition: transform $propiedadTransform;
         width: 100%;
         border-radius: 20px 20px 0 0;
         &:hover {
-          transform: scale(0.98);
+          @include transform(scale(0.98));
         }
       }
       &:hover {
-        transform: scale(1.05);
+        @include transform(scale(1.05));
       }
     }
     .contenedor__gato4 {
       grid-area: gato4;
-      transition: transform 0.5s;
+      transition: transform $propiedadTransform;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: space-between;
       .contenedor__imgEuropeo {
-        transition: transform 0.5s;
+        transition: transform $propiedadTransform;
         width: 100%;
         border-radius: 20px 20px 0 0;
         &:hover {
-          transform: scale(0.98);
+          @include transform(scale(0.98));
         }
       }
       &:hover {
-        transform: scale(1.05);
+        @include transform(scale(1.05));
       }
     }
     .contenedor__btnvermas {
@@ -170,19 +207,19 @@ body {
     }
     .contenedor__gato1 {
       grid-area: gato1;
-      background-color: $color-fondo;
+      @include color-paleta2;
     }
     .contenedor__gato2 {
       grid-area: gato2;
-      background-color: $color-fondo;
+      @include color-paleta2;
     }
     .contenedor__gato3 {
       grid-area: gato3;
-      background-color: $color-fondo;
+      @include color-paleta2;
     }
     .contenedor__gato4 {
       grid-area: gato4;
-      background-color: $color-fondo;
+      @include color-paleta2;
     }
     .contenedor__btnvermas {
       grid-area: btnvermas;
@@ -242,7 +279,6 @@ body {
     }
   }
   .contenedor__nombreDEgatos1234 {
-    @include estilos(black, transparent);
     font-weight: bold;
     margin: 10px 0px 8px 15px;
   }
@@ -255,7 +291,7 @@ body {
     margin: 0px auto 12px;
   }
   .estilosGatos1234 {
-    background-color: $color-fondo;
+    @include color-paleta2;
     margin: 0px 15px 0px 15px;
     border-radius: 20px;
     -webkit-box-shadow: 5px 1px 18px -2px $color-fondo;
@@ -272,10 +308,10 @@ body {
   border-radius: 10px;
   font-size: 15px;
   font-weight: bold;
-  transition: transform 0.5s;
+  transition: transform $propiedadTransform;
   display: flex;
   &:hover {
-    transform: scale(1.1);
+    @include transform(scale(1.1));
   }
 }
 
@@ -286,16 +322,16 @@ body {
   height: 50px;
   font-size: 20px;
   font-weight: bold;
-  transition: transform 0.5s;
+  transition: transform $propiedadTransform;
   &:hover {
-    transform: scale(1.1);
+    @include transform(scale(1.1));
   }
 }
 
 /*footer*/
 
 .footer {
-  background-color: #1d3557;
+  @include color-paleta;
   .footer__padreDiv1 {
     display: flex;
     flex-flow: row wrap;
@@ -311,7 +347,7 @@ body {
         text-decoration: none;
         .footer__hijoNombre {
           display: inline;
-          color: azure;
+          @include color-letra;
         }
       }
     }
@@ -322,7 +358,7 @@ body {
       height: 100px;
       align-items: center;
       .footer__mensaje1 {
-        color: azure;
+        @include color-letra;
         padding: 0px 20px 0px;
       }
       .footer__padreRedes1 {
@@ -336,7 +372,7 @@ body {
           }
           .footer__hijosNombresRedes {
             display: inline;
-            color: azure;
+            @include color-letra;
           }
           .footer__hijosNombresRedes:hover {
             color: rgb(210, 221, 221);
@@ -352,7 +388,7 @@ body {
           }
           .footer__hijosNombresEnLasRedes {
             display: inline;
-            color: azure;
+            @include color-letra;
           }
           .footer__hijosNombresEnLasRedes:hover {
             color: rgb(210, 221, 221);
@@ -374,7 +410,7 @@ body {
     height: fit-content;
     margin: 10px 0px 0px 0px;
     .footer__itemsEnlaces {
-      color: azure;
+      @include color-letra;
       margin: 0px 10px;
       text-decoration: none;
     }
@@ -382,7 +418,7 @@ body {
       color: rgb(197, 204, 204);
     }
     .footer_derechosDeAutor {
-      color: azure;
+      @include color-letra;
       margin: 0px 2% 0px 0px;
     }
   }
